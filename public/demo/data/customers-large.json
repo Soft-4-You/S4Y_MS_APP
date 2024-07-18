@@ -9,11 +9,11 @@
           },
           "company":"Benton, John B Jr",
           "date":"2015-09-13",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":17,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":70663
@@ -27,11 +27,11 @@
           },
           "company":"Chanay, Jeffrey A Esq",
           "date":"2019-02-09",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":0,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":82429
@@ -45,11 +45,11 @@
           },
           "company":"Chemel, James L Cpa",
           "date":"2017-05-13",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":63,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":28334
@@ -67,7 +67,7 @@
           "verified":false,
           "activity":37,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":88521
@@ -81,11 +81,11 @@
           },
           "company":"Printing Dimensions",
           "date":"2016-05-20",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":33,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":93905
@@ -99,11 +99,11 @@
           },
           "company":"Chapman, Ross E Esq",
           "date":"2018-02-16",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":68,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":50041
@@ -121,7 +121,7 @@
           "verified":true,
           "activity":54,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":58706
@@ -139,7 +139,7 @@
           "verified":true,
           "activity":69,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":26640
@@ -153,11 +153,11 @@
           },
           "company":"Truhlar And Truhlar Attys",
           "date":"2018-11-21",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":76,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":65369
@@ -171,11 +171,11 @@
           },
           "company":"King, Christopher A Esq",
           "date":"2015-07-07",
-          "status":"proposal",
+          "status":"create",
           "verified":false,
           "activity":3,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":63451
@@ -189,11 +189,11 @@
           },
           "company":"Dorl, James J Esq",
           "date":"2018-11-07",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":38,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":71169
@@ -207,11 +207,11 @@
           },
           "company":"Rangoni Of Florence",
           "date":"2017-03-11",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":87,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":96842
@@ -225,11 +225,11 @@
           },
           "company":"Feiner Bros",
           "date":"2015-10-20",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":80,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":92734
@@ -247,7 +247,7 @@
           "verified":false,
           "activity":59,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":45250
@@ -265,7 +265,7 @@
           "verified":true,
           "activity":90,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":30236
@@ -283,7 +283,7 @@
           "verified":false,
           "activity":52,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":64533
@@ -297,11 +297,11 @@
           },
           "company":"Bolton, Wilbur Esq",
           "date":"2018-07-04",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":31,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":37279
@@ -319,7 +319,7 @@
           "verified":true,
           "activity":48,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":27381
@@ -337,7 +337,7 @@
           "verified":true,
           "activity":16,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":9257
@@ -355,7 +355,7 @@
           "verified":true,
           "activity":19,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":67783
@@ -373,7 +373,7 @@
           "verified":false,
           "activity":100,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":4609
@@ -391,7 +391,7 @@
           "verified":false,
           "activity":72,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":26565
@@ -409,7 +409,7 @@
           "verified":true,
           "activity":94,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":75876
@@ -423,11 +423,11 @@
           },
           "company":"Franklin, Peter L Esq",
           "date":"2017-03-11",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":56,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":41121
@@ -441,11 +441,11 @@
           },
           "company":"Wtlz Power 107 Fm",
           "date":"2018-03-27",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":7,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":91691
@@ -459,11 +459,11 @@
           },
           "company":"Ledecky, David Esq",
           "date":"2016-02-20",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":1,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":40137
@@ -481,7 +481,7 @@
           "verified":true,
           "activity":26,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":21304
@@ -499,7 +499,7 @@
           "verified":false,
           "activity":76,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":60454
@@ -513,11 +513,11 @@
           },
           "company":"U Pull It",
           "date":"2020-04-11",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":7,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":17565
@@ -535,7 +535,7 @@
           "verified":true,
           "activity":81,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":17774
@@ -553,7 +553,7 @@
           "verified":true,
           "activity":56,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":49201
@@ -567,11 +567,11 @@
           },
           "company":"Cascade Realty Advisors Inc",
           "date":"2017-08-02",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":94,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":67126
@@ -589,7 +589,7 @@
           "verified":true,
           "activity":68,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":76017
@@ -603,11 +603,11 @@
           },
           "company":"Giampetro, Anthony D",
           "date":"2019-08-08",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":85,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":91201
@@ -625,7 +625,7 @@
           "verified":false,
           "activity":46,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":12237
@@ -639,11 +639,11 @@
           },
           "company":"Mosocco, Ronald A",
           "date":"2015-02-12",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":32,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":34072
@@ -657,11 +657,11 @@
           },
           "company":"Tri State Refueler Co",
           "date":"2018-04-25",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":77,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":94909
@@ -675,11 +675,11 @@
           },
           "company":"Parkway Company",
           "date":"2016-02-27",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":66,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":57245
@@ -693,11 +693,11 @@
           },
           "company":"Fbs Business Finance",
           "date":"2019-09-17",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":25,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":75502
@@ -715,7 +715,7 @@
           "verified":false,
           "activity":51,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":82075
@@ -733,7 +733,7 @@
           "verified":true,
           "activity":49,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":19208
@@ -747,11 +747,11 @@
           },
           "company":"International Eyelets Inc",
           "date":"2017-02-02",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":5,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":50194
@@ -765,11 +765,11 @@
           },
           "company":"Rapid Trading Intl",
           "date":"2018-12-25",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":100,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":77714
@@ -783,11 +783,11 @@
           },
           "company":"Abc Enterprises Inc",
           "date":"2018-04-10",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":71,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":35740
@@ -801,11 +801,11 @@
           },
           "company":"Cindy Turner Associates",
           "date":"2018-05-06",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":54,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":30790
@@ -823,7 +823,7 @@
           "verified":true,
           "activity":93,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":52343
@@ -837,11 +837,11 @@
           },
           "company":"Grace Pastries Inc",
           "date":"2018-02-19",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":97,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":53966
@@ -859,7 +859,7 @@
           "verified":false,
           "activity":80,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":9920
@@ -877,7 +877,7 @@
           "verified":false,
           "activity":63,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":78069
@@ -895,7 +895,7 @@
           "verified":true,
           "activity":92,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":65005
@@ -913,7 +913,7 @@
           "verified":true,
           "activity":72,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":51038
@@ -931,7 +931,7 @@
           "verified":false,
           "activity":36,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":28218
@@ -949,7 +949,7 @@
           "verified":false,
           "activity":31,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":78527
@@ -967,7 +967,7 @@
           "verified":false,
           "activity":89,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":23381
@@ -981,11 +981,11 @@
           },
           "company":"Rossi, Michael M",
           "date":"2017-04-17",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":27,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":64821
@@ -999,11 +999,11 @@
           },
           "company":"Northwest Publishing",
           "date":"2019-04-14",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":27,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":55334
@@ -1021,7 +1021,7 @@
           "verified":false,
           "activity":79,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":83391
@@ -1039,7 +1039,7 @@
           "verified":true,
           "activity":39,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":31580
@@ -1053,11 +1053,11 @@
           },
           "company":"Wye Technologies Inc",
           "date":"2020-10-05",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":55,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":11723
@@ -1075,7 +1075,7 @@
           "verified":false,
           "activity":79,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":8454
@@ -1093,7 +1093,7 @@
           "verified":false,
           "activity":49,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":99235
@@ -1107,11 +1107,11 @@
           },
           "company":"Hubbard, Bruce Esq",
           "date":"2017-05-25",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":87,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":15656
@@ -1129,7 +1129,7 @@
           "verified":true,
           "activity":5,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":60586
@@ -1143,11 +1143,11 @@
           },
           "company":"George Jessop Carter Jewelers",
           "date":"2019-09-07",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":77,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":86239
@@ -1165,7 +1165,7 @@
           "verified":false,
           "activity":94,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":15621
@@ -1183,7 +1183,7 @@
           "verified":false,
           "activity":25,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":77248
@@ -1197,11 +1197,11 @@
           },
           "company":"Hawaiian King Hotel",
           "date":"2020-03-03",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":96,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":478
@@ -1215,11 +1215,11 @@
           },
           "company":"Killion Industries",
           "date":"2018-09-18",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":38,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":62505
@@ -1237,7 +1237,7 @@
           "verified":true,
           "activity":49,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":91480
@@ -1255,7 +1255,7 @@
           "verified":false,
           "activity":16,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":21671
@@ -1269,11 +1269,11 @@
           },
           "company":"Rowley Schlimgen Inc",
           "date":"2017-04-05",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":25,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":13775
@@ -1291,7 +1291,7 @@
           "verified":false,
           "activity":16,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":60253
@@ -1305,11 +1305,11 @@
           },
           "company":"Smits, Patricia Garity",
           "date":"2018-08-17",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":85,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":75225
@@ -1327,7 +1327,7 @@
           "verified":true,
           "activity":92,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":3308
@@ -1341,11 +1341,11 @@
           },
           "company":"A K Construction Co",
           "date":"2018-11-13",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":22,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":19711
@@ -1363,7 +1363,7 @@
           "verified":false,
           "activity":64,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":55110
@@ -1381,7 +1381,7 @@
           "verified":false,
           "activity":80,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":62392
@@ -1395,11 +1395,11 @@
           },
           "company":"Wood & Whitacre Contractors",
           "date":"2017-09-15",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":70,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":76530
@@ -1413,11 +1413,11 @@
           },
           "company":"Mark Iv Press Ltd",
           "date":"2017-03-27",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":16,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":7460
@@ -1431,11 +1431,11 @@
           },
           "company":"Museum Of Science & Industry",
           "date":"2017-06-01",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":90,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":42251
@@ -1449,11 +1449,11 @@
           },
           "company":"Garrison Ind",
           "date":"2017-03-14",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":96,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":36435
@@ -1471,7 +1471,7 @@
           "verified":true,
           "activity":77,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":39197
@@ -1485,11 +1485,11 @@
           },
           "company":"Smc Inc",
           "date":"2018-09-11",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":46,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":72707
@@ -1503,11 +1503,11 @@
           },
           "company":"E A I Electronic Assocs Inc",
           "date":"2017-11-12",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":83,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":97965
@@ -1521,11 +1521,11 @@
           },
           "company":"Conte, Christopher A Esq",
           "date":"2016-03-01",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":83,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":5823
@@ -1539,11 +1539,11 @@
           },
           "company":"Anker Law Office",
           "date":"2016-05-21",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":49,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":96471
@@ -1561,7 +1561,7 @@
           "verified":true,
           "activity":34,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":33710
@@ -1575,11 +1575,11 @@
           },
           "company":"Fligg, Kenneth I Jr",
           "date":"2016-07-26",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":64,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":30611
@@ -1597,7 +1597,7 @@
           "verified":false,
           "activity":51,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":32960
@@ -1615,7 +1615,7 @@
           "verified":false,
           "activity":11,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":57423
@@ -1633,7 +1633,7 @@
           "verified":true,
           "activity":64,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":23027
@@ -1651,7 +1651,7 @@
           "verified":false,
           "activity":44,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":84182
@@ -1665,11 +1665,11 @@
           },
           "company":"Stevens, Charles T",
           "date":"2018-12-13",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":62,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":25237
@@ -1687,7 +1687,7 @@
           "verified":true,
           "activity":79,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":87736
@@ -1701,11 +1701,11 @@
           },
           "company":"Tree Musketeers",
           "date":"2019-02-17",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":50,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":38674
@@ -1723,7 +1723,7 @@
           "verified":false,
           "activity":84,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":67762
@@ -1741,7 +1741,7 @@
           "verified":false,
           "activity":88,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":81299
@@ -1755,11 +1755,11 @@
           },
           "company":"Kelly, Charles G Esq",
           "date":"2019-10-02",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":44,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":64794
@@ -1777,7 +1777,7 @@
           "verified":true,
           "activity":7,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":7815
@@ -1791,11 +1791,11 @@
           },
           "company":"Beck Horizon Builders",
           "date":"2018-05-14",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":99,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":37976
@@ -1809,11 +1809,11 @@
           },
           "company":"Porto Cayo At Hawks Cay",
           "date":"2018-03-14",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":0,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":59594
@@ -1827,11 +1827,11 @@
           },
           "company":"Pacific Grove Museum Ntrl Hist",
           "date":"2018-09-23",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":3,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":92528
@@ -1845,11 +1845,11 @@
           },
           "company":"Bender & Hatley Pc",
           "date":"2018-04-10",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":88,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":58964
@@ -1863,11 +1863,11 @@
           },
           "company":"Di Cristina J & Son",
           "date":"2017-09-18",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":92,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":65860
@@ -1885,7 +1885,7 @@
           "verified":true,
           "activity":19,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":63863
@@ -1899,11 +1899,11 @@
           },
           "company":"American Arts & Graphics",
           "date":"2020-06-18",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":21,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":37510
@@ -1921,7 +1921,7 @@
           "verified":false,
           "activity":97,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":63876
@@ -1935,11 +1935,11 @@
           },
           "company":"Marking Devices Pubg Co",
           "date":"2017-06-25",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":27,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":93263
@@ -1957,7 +1957,7 @@
           "verified":true,
           "activity":35,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":57198
@@ -1975,7 +1975,7 @@
           "verified":true,
           "activity":81,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":89147
@@ -1993,7 +1993,7 @@
           "verified":true,
           "activity":54,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":41466
@@ -2007,11 +2007,11 @@
           },
           "company":"Juno Chefs Incorporated",
           "date":"2017-03-17",
-          "status":"proposal",
+          "status":"create",
           "verified":false,
           "activity":31,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":38918
@@ -2029,7 +2029,7 @@
           "verified":false,
           "activity":28,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":11397
@@ -2043,11 +2043,11 @@
           },
           "company":"Stanley, Richard L Esq",
           "date":"2019-02-03",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":45,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":40930
@@ -2061,11 +2061,11 @@
           },
           "company":"K Cs Cstm Mouldings Windows",
           "date":"2016-09-22",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":34,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":40847
@@ -2079,11 +2079,11 @@
           },
           "company":"Comfort Inn",
           "date":"2017-09-27",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":36,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":27832
@@ -2097,11 +2097,11 @@
           },
           "company":"Windsor, James L Esq",
           "date":"2017-06-25",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":69,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":89060
@@ -2115,11 +2115,11 @@
           },
           "company":"Jackson Shields Yeiser",
           "date":"2016-07-13",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":55,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":52474
@@ -2137,7 +2137,7 @@
           "verified":false,
           "activity":1,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":19094
@@ -2155,7 +2155,7 @@
           "verified":false,
           "activity":8,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":93756
@@ -2169,11 +2169,11 @@
           },
           "company":"Bresler Eitel Framg Gllry Ltd",
           "date":"2019-07-06",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":50,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":77388
@@ -2187,11 +2187,11 @@
           },
           "company":"Carol, Drake Sparks Esq",
           "date":"2018-05-22",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":77,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":48759
@@ -2209,7 +2209,7 @@
           "verified":true,
           "activity":65,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":37568
@@ -2223,11 +2223,11 @@
           },
           "company":"Desco Equipment Corp",
           "date":"2017-10-09",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":30,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":4477
@@ -2241,11 +2241,11 @@
           },
           "company":"Merlin Electric Co",
           "date":"2019-05-23",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":10,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":13764
@@ -2259,11 +2259,11 @@
           },
           "company":"Bailey Cntl Co Div Babcock",
           "date":"2019-03-02",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":22,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":68222
@@ -2281,7 +2281,7 @@
           "verified":false,
           "activity":69,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":29164
@@ -2299,7 +2299,7 @@
           "verified":false,
           "activity":4,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":61651
@@ -2317,7 +2317,7 @@
           "verified":true,
           "activity":11,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":79938
@@ -2331,11 +2331,11 @@
           },
           "company":"Nelson Hawaiian Ltd",
           "date":"2016-11-10",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":41,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":44037
@@ -2353,7 +2353,7 @@
           "verified":true,
           "activity":84,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":89918
@@ -2371,7 +2371,7 @@
           "verified":false,
           "activity":22,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":32372
@@ -2389,7 +2389,7 @@
           "verified":true,
           "activity":63,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":46478
@@ -2403,11 +2403,11 @@
           },
           "company":"Honey Bee Breeding Genetics &",
           "date":"2016-05-02",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":47,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":30674
@@ -2421,11 +2421,11 @@
           },
           "company":"Wells Kravitz Schnitzer",
           "date":"2018-04-13",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":62,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":47714
@@ -2443,7 +2443,7 @@
           "verified":true,
           "activity":55,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":14307
@@ -2457,11 +2457,11 @@
           },
           "company":"Eldridge, Kristin K Esq",
           "date":"2016-02-05",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":3,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":82069
@@ -2475,11 +2475,11 @@
           },
           "company":"Vlahos, John J Esq",
           "date":"2017-03-12",
-          "status":"proposal",
+          "status":"create",
           "verified":false,
           "activity":3,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":11182
@@ -2493,11 +2493,11 @@
           },
           "company":"Ninas Indian Grs & Videos",
           "date":"2019-03-27",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":67,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":17126
@@ -2511,11 +2511,11 @@
           },
           "company":"Schmid, Gayanne K Esq",
           "date":"2019-08-06",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":14,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":19724
@@ -2529,11 +2529,11 @@
           },
           "company":"Moapa Valley Federal Credit Un",
           "date":"2018-03-20",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":8,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":91888
@@ -2547,11 +2547,11 @@
           },
           "company":"Kentucky Tennessee Clay Co",
           "date":"2016-02-15",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":17,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":15016
@@ -2565,11 +2565,11 @@
           },
           "company":"Admiral Party Rentals & Sales",
           "date":"2016-02-10",
-          "status":"proposal",
+          "status":"create",
           "verified":false,
           "activity":58,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":23118
@@ -2583,11 +2583,11 @@
           },
           "company":"Nelson, Karolyn King Esq",
           "date":"2019-07-16",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":82,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":90560
@@ -2605,7 +2605,7 @@
           "verified":false,
           "activity":96,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":34155
@@ -2619,11 +2619,11 @@
           },
           "company":"Shank, Edward L Esq",
           "date":"2017-07-02",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":92,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":6350
@@ -2637,11 +2637,11 @@
           },
           "company":"Megibow & Edwards",
           "date":"2019-08-17",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":18,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":77641
@@ -2659,7 +2659,7 @@
           "verified":true,
           "activity":9,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":43289
@@ -2673,11 +2673,11 @@
           },
           "company":"Woodbridge Free Public Library",
           "date":"2020-03-14",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":44,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":85657
@@ -2695,7 +2695,7 @@
           "verified":false,
           "activity":55,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":82733
@@ -2709,11 +2709,11 @@
           },
           "company":"Alinabal Inc",
           "date":"2017-03-04",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":21,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":38004
@@ -2731,7 +2731,7 @@
           "verified":true,
           "activity":91,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":29038
@@ -2749,7 +2749,7 @@
           "verified":false,
           "activity":30,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":75123
@@ -2763,11 +2763,11 @@
           },
           "company":"Silver Bros Inc",
           "date":"2016-08-19",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":14,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":33214
@@ -2781,11 +2781,11 @@
           },
           "company":"Newtec Inc",
           "date":"2020-02-09",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":77,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":80651
@@ -2799,11 +2799,11 @@
           },
           "company":"Creative Business Systems",
           "date":"2020-04-03",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":58,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":5085
@@ -2821,7 +2821,7 @@
           "verified":true,
           "activity":78,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":93021
@@ -2839,7 +2839,7 @@
           "verified":false,
           "activity":67,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":37287
@@ -2857,7 +2857,7 @@
           "verified":false,
           "activity":29,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":73070
@@ -2871,11 +2871,11 @@
           },
           "company":"Redeker, Debbie",
           "date":"2015-05-28",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":13,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":64422
@@ -2889,11 +2889,11 @@
           },
           "company":"Desert Sands Motel",
           "date":"2016-09-05",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":75,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":36826
@@ -2911,7 +2911,7 @@
           "verified":true,
           "activity":1,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":93101
@@ -2925,11 +2925,11 @@
           },
           "company":"Lehigh Furn Divsn Lehigh",
           "date":"2015-11-28",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":13,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":60177
@@ -2947,7 +2947,7 @@
           "verified":false,
           "activity":73,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":47198
@@ -2961,11 +2961,11 @@
           },
           "company":"Capitol Reporters",
           "date":"2016-11-05",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":76,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":71305
@@ -2979,11 +2979,11 @@
           },
           "company":"Kwik Kopy Printing",
           "date":"2020-08-13",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":60,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":17526
@@ -3001,7 +3001,7 @@
           "verified":true,
           "activity":24,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":16596
@@ -3015,11 +3015,11 @@
           },
           "company":"Campbell, Jan Esq",
           "date":"2020-02-25",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":93,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":56870
@@ -3033,11 +3033,11 @@
           },
           "company":"Evans, C Kelly Esq",
           "date":"2017-12-19",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":30,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":82928
@@ -3055,7 +3055,7 @@
           "verified":false,
           "activity":93,
           "representative":{
-             "name":"Amy Elsner",
+             "name":"idk but this dude is fucking around",
              "image":"amyelsner.png"
           },
           "balance":64181
@@ -3069,11 +3069,11 @@
           },
           "company":"Nagle, Daniel J Esq",
           "date":"2016-12-24",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":88,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":30561
@@ -3091,7 +3091,7 @@
           "verified":true,
           "activity":70,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":24617
@@ -3105,11 +3105,11 @@
           },
           "company":"Ray Carolyne Realty",
           "date":"2018-02-12",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":61,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":77860
@@ -3123,11 +3123,11 @@
           },
           "company":"Berg, Charles E",
           "date":"2018-06-10",
-          "status":"unqualified",
+          "status":"delete",
           "verified":false,
           "activity":91,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":25664
@@ -3145,7 +3145,7 @@
           "verified":true,
           "activity":98,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":98113
@@ -3159,11 +3159,11 @@
           },
           "company":"Chadds Ford Winery",
           "date":"2019-07-27",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":97,
           "representative":{
-             "name":"Ioni Bowcher",
+             "name":"idk but this dude is fucking around",
              "image":"ionibowcher.png"
           },
           "balance":14763
@@ -3181,7 +3181,7 @@
           "verified":true,
           "activity":56,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":31317
@@ -3195,11 +3195,11 @@
           },
           "company":"Corn Popper",
           "date":"2020-09-16",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":76,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":30883
@@ -3217,7 +3217,7 @@
           "verified":true,
           "activity":43,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":93785
@@ -3231,11 +3231,11 @@
           },
           "company":"Anchorage Museum Of Hist & Art",
           "date":"2018-06-22",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":58,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":68380
@@ -3249,11 +3249,11 @@
           },
           "company":"Haber, George D Md",
           "date":"2018-10-25",
-          "status":"qualified",
+          "status":"update",
           "verified":false,
           "activity":72,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":93454
@@ -3267,11 +3267,11 @@
           },
           "company":"Royal Pontiac Olds Inc",
           "date":"2018-07-19",
-          "status":"proposal",
+          "status":"create",
           "verified":false,
           "activity":24,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":30570
@@ -3285,11 +3285,11 @@
           },
           "company":"Leonards Antiques Inc",
           "date":"2015-03-15",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":86,
           "representative":{
-             "name":"Anna Fali",
+             "name":"idk but this dude is fucking around",
              "image":"annafali.png"
           },
           "balance":79506
@@ -3303,11 +3303,11 @@
           },
           "company":"Meca",
           "date":"2017-04-14",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":15,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":8654
@@ -3321,11 +3321,11 @@
           },
           "company":"Nercon Engineering & Mfg Inc",
           "date":"2015-02-19",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":9,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":13368
@@ -3339,11 +3339,11 @@
           },
           "company":"Replica I",
           "date":"2016-03-25",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":82,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":92631
@@ -3357,11 +3357,11 @@
           },
           "company":"20 20 Printing Inc",
           "date":"2020-10-13",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":13,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":4989
@@ -3375,11 +3375,11 @@
           },
           "company":"Publishers Group West",
           "date":"2019-12-21",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":57,
           "representative":{
-             "name":"Bernardo Dominic",
+             "name":"idk but this dude is fucking around",
              "image":"bernardodominic.png"
           },
           "balance":77668
@@ -3397,7 +3397,7 @@
           "verified":true,
           "activity":45,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":3525
@@ -3415,7 +3415,7 @@
           "verified":true,
           "activity":64,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":45838
@@ -3433,7 +3433,7 @@
           "verified":false,
           "activity":74,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":49148
@@ -3447,11 +3447,11 @@
           },
           "company":"Computer Repair Service",
           "date":"2016-02-13",
-          "status":"proposal",
+          "status":"create",
           "verified":false,
           "activity":79,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":96709
@@ -3469,7 +3469,7 @@
           "verified":false,
           "activity":19,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":23253
@@ -3487,7 +3487,7 @@
           "verified":true,
           "activity":11,
           "representative":{
-             "name":"Onyama Limba",
+             "name":"idk but this dude is fucking around",
              "image":"onyamalimba.png"
           },
           "balance":40836
@@ -3501,11 +3501,11 @@
           },
           "company":"New England Taxidermy",
           "date":"2019-01-07",
-          "status":"proposal",
+          "status":"create",
           "verified":true,
           "activity":4,
           "representative":{
-             "name":"Stephen Shaw",
+             "name":"idk but this dude is fucking around",
              "image":"stephenshaw.png"
           },
           "balance":60719
@@ -3519,11 +3519,11 @@
           },
           "company":"Ludcke, George O Esq",
           "date":"2016-08-14",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":62,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":17419
@@ -3541,7 +3541,7 @@
           "verified":true,
           "activity":64,
           "representative":{
-             "name":"Elwin Sharvill",
+             "name":"idk but this dude is fucking around",
              "image":"elwinsharvill.png"
           },
           "balance":94052
@@ -3555,11 +3555,11 @@
           },
           "company":"Eagle Software Inc",
           "date":"2015-12-14",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":91,
           "representative":{
-             "name":"Xuxue Feng",
+             "name":"idk but this dude is fucking around",
              "image":"xuxuefeng.png"
           },
           "balance":54241
@@ -3573,11 +3573,11 @@
           },
           "company":"Juvenile & Adult Super",
           "date":"2019-06-01",
-          "status":"unqualified",
+          "status":"delete",
           "verified":true,
           "activity":40,
           "representative":{
-             "name":"Asiya Javayant",
+             "name":"idk but this dude is fucking around",
              "image":"asiyajavayant.png"
           },
           "balance":87668
@@ -3591,11 +3591,11 @@
           },
           "company":"Perez, Joseph J Esq",
           "date":"2015-12-09",
-          "status":"qualified",
+          "status":"update",
           "verified":true,
           "activity":27,
           "representative":{
-             "name":"Ivan Magalhaes",
+             "name":"idk but this dude is fucking around",
              "image":"ivanmagalhaes.png"
           },
           "balance":99417

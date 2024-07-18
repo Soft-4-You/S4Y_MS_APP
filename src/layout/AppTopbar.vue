@@ -22,14 +22,21 @@ const logoUrl = computed(() => {
     return '/layout/images/S4Y-logo-simple-no-bg.webp';
 });
 
-const onProfileButton = () => {
-    topbarMenuActive.value = false;
-    // router.push('/documentation');
+// The three dots in mobile view
+const onTopBarMenuButton = () => {
+    topbarMenuActive.value = !topbarMenuActive.value;
 };
-// const onSettingsClick = () => {
-//     topbarMenuActive.value = false;
-//     router.push('/documentation');
-// };
+
+const onProfileButton = () => {
+    topbarMenuActive.value = false; // To hide the floating menu after navigation.
+    router.push({ name: 'profile' });
+};
+
+const onLogoutButton = () => {
+    topbarMenuActive.value = false;
+    router.push({ name: 'login' });
+};
+
 const topbarMenuClasses = computed(() => {
     return {
         'layout-topbar-menu-mobile-active': topbarMenuActive.value
@@ -78,18 +85,14 @@ const isOutsideClicked = (event) => {
         </button>
 
         <div class="layout-topbar-menu" :class="topbarMenuClasses">
-            <!-- <button @click="onTopBarMenuButton()" class="p-link layout-topbar-button">
-                <i class="pi pi-calendar"></i>
-                <span>Calendar</span>
-            </button> -->
             <button @click="onProfileButton()" class="p-link layout-topbar-button">
                 <i class="pi pi-user"></i>
                 <span>Profile</span>
             </button>
-            <!-- <button @click="onSettingsClick()" class="p-link layout-topbar-button">
-                <i class="pi pi-cog"></i>
-                <span>Settings</span>
-            </button> -->
+            <button @click="onLogoutButton()" class="p-link layout-topbar-button">
+                <i class="pi pi-sign-out"></i>
+                <span>Logout</span>
+            </button>
         </div>
     </div>
 </template>

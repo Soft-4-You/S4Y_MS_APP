@@ -58,7 +58,6 @@ const router = createRouter({
                     name: 'panel',
                     component: () => import('@/views/uikit/Panels.vue')
                 },
-
                 {
                     path: '/uikit/overlay',
                     name: 'overlay',
@@ -140,6 +139,87 @@ const router = createRouter({
                     path: '/documentation',
                     name: 'documentation',
                     component: () => import('@/views/utilities/Documentation.vue')
+                },
+                // My
+                {
+                    path: '/pages/logs',
+                    name: 'logs',
+                    component: () => import('@/views/pages/Logs.vue')
+                },
+                {
+                    path: '/pages/roles_permissions',
+                    name: 'roles_permissions',
+                    component: () => import('@/views/pages/RolesPermissions.vue')
+                },
+                {
+                    path: '/pages/profile',
+                    name: 'profile',
+                    component: () => import('@/views/pages/Profile.vue')
+                },
+                {
+                    path: '/pages/docs/contracts',
+                    name: 'contracts',
+                    component: () => import('@/views/pages/docs/Contracts.vue')
+                },
+                {
+                    path: '/pages/docs/invoices',
+                    name: 'invoices',
+                    component: () => import('@/views/pages/docs/Invoices.vue')
+                },
+                {
+                    path: '/pages/users/employees',
+                    name: 'employees',
+                    component: () => import('@/views/pages/users/Employees.vue')
+                },
+                {
+                    path: '/pages/users/clients',
+                    name: 'clients',
+                    component: () => import('@/views/pages/users/Clients.vue')
+                },
+                {
+                    path: '/pages/users/distributors',
+                    name: 'distributors',
+                    component: () => import('@/views/pages/users/Distributors.vue')
+                },
+                {
+                    path: '/pages/financial/incomes',
+                    name: 'incomes',
+                    component: () => import('@/views/pages/financial/Incomes.vue')
+                },
+                {
+                    path: '/pages/financial/expenses',
+                    name: 'expenses',
+                    component: () => import('@/views/pages/financial/Expenses.vue')
+                },
+                {
+                    path: '/pages/financial/payments',
+                    name: 'payments',
+                    component: () => import('@/views/pages/financial/Payments.vue')
+                },
+                {
+                    path: '/pages/reminders',
+                    name: 'reminders',
+                    component: () => import('@/views/pages/Reminders.vue')
+                },
+                {
+                    path: '/pages/general_tasks',
+                    name: 'general_tasks',
+                    component: () => import('@/views/pages/GeneralTasks.vue')
+                },
+                {
+                    path: '/pages/projects',
+                    name: 'projects',
+                    component: () => import('@/views/pages/Projects.vue')
+                },
+                {
+                    path: '/pages/products/products',
+                    name: 'products',
+                    component: () => import('@/views/pages/products/Products.vue')
+                },
+                {
+                    path: '/pages/products/product_details',
+                    name: 'product_details',
+                    component: () => import('@/views/pages/products/ProductDetails.vue')
                 }
             ]
         },
