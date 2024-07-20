@@ -96,9 +96,9 @@ onBeforeMount(() => {
                                 <span class="text-primary font-semibold">{{ item.label }}</span>
                             </a>
                         </router-link>
-                        <a v-else :href="item.url" :target="item.target" v-bind="props.action">
+                        <p>
                             <span class="text-surface-700 dark:text-surface-0">{{ item.label }}</span>
-                        </a>
+                        </p>
                     </template>
                 </Breadcrumb>
             </div>
@@ -297,7 +297,7 @@ onBeforeMount(() => {
                 <h5 class="text-left w-full">Packages sales distribution</h5>
                 <Chart type="doughnut" :data="chartData" :options="chartOptions"></Chart>
                 <!-- For normal products only -->
-                <h4>Total Number of Sales: {{ chartData.datasets[0].data[0] + chartData.datasets[0].data[1] + chartData.datasets[0].data[2]  }}</h4>
+                <h4>Total Number of Sales: {{ chartData.datasets[0].data[0] + chartData.datasets[0].data[1] + chartData.datasets[0].data[2] }}</h4>
             </div>
         </div>
 

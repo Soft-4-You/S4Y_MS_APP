@@ -43,10 +43,10 @@ const model = ref([
     },
     {
         label: 'Pages',
-        items: [
+    items: [
             { label: 'Reminders', icon: 'pi pi-fw pi-clock', to: '/pages/reminders' },
             { label: 'General Tasks', icon: 'pi pi-fw pi-check-square', to: '/pages/general_tasks' },
-            { label: 'Projects', icon: 'pi pi-fw pi-code', to: '/pages/projects' },
+            { label: 'Projects', icon: 'pi pi-fw pi-code', to: '/pages/projects/projects' },
             { label: 'Products', icon: 'pi pi-fw pi-box', to: '/pages/products/products' }
         ]
     },

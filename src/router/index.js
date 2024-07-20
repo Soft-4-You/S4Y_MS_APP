@@ -140,7 +140,7 @@ const router = createRouter({
                     name: 'documentation',
                     component: () => import('@/views/utilities/Documentation.vue')
                 },
-                // My
+                // \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ My
                 {
                     path: '/pages/logs',
                     name: 'logs',
@@ -207,9 +207,48 @@ const router = createRouter({
                     component: () => import('@/views/pages/GeneralTasks.vue')
                 },
                 {
-                    path: '/pages/projects',
+                    path: '/pages/projects/projects',
                     name: 'projects',
-                    component: () => import('@/views/pages/Projects.vue')
+                    component: () => import('@/views/pages/projects/Projects.vue')
+                },
+                {
+                    path: '/pages/projects/project_details',
+                    name: 'project_details',
+                    component: () => import('@/views/pages/projects/ProjectDetails.vue'),
+                    children: [
+                        {
+                            path: '/pages/projects/project_details',
+                            component: () => import('@/views/pages/projects/sub_pages/Overview.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/tasks',
+                            component: () => import('@/views/pages/projects/sub_pages/Tasks.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/files',
+                            component: () => import('@/views/pages/projects/sub_pages/Files.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/notes',
+                            component: () => import('@/views/pages/projects/sub_pages/Notes.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/timesheets',
+                            component: () => import('@/views/pages/projects/sub_pages/Timesheets.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/milestones',
+                            component: () => import('@/views/pages/projects/sub_pages/Milestones.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/client_comment',
+                            component: () => import('@/views/pages/projects/sub_pages/ClientComments.vue')
+                        },
+                        {
+                            path: '/pages/projects/project_details/project_members',
+                            component: () => import('@/views/pages/projects/sub_pages/ProjectMembers.vue')
+                        }
+                    ]
                 },
                 {
                     path: '/pages/products/products',

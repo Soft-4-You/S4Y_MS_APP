@@ -126,8 +126,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Projects</span>
                         <div class="text-900 font-medium text-xl">152</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-code text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">24 new </span>
@@ -141,8 +141,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Products</span>
                         <div class="text-900 font-medium text-xl">152</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-purple-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-comment text-purple-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-box text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">85 </span>
@@ -156,8 +156,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Employees</span>
                         <div class="text-900 font-medium text-xl">28441</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-cyan-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-inbox text-cyan-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-users text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">520 </span>
@@ -171,8 +171,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Revenue</span>
                         <div class="text-900 font-medium text-xl">$2.100</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-map-marker text-orange-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-dollar text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">%52+ </span>
@@ -188,8 +188,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Projects you worked on</span>
                         <div class="text-900 font-medium text-xl">152</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-blue-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-shopping-cart text-blue-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-code text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">24 new </span>
@@ -203,8 +203,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Finished tasks</span>
                         <div class="text-900 font-medium text-xl">152</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-purple-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-comment text-purple-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-check-square text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">85 </span>
@@ -218,8 +218,8 @@ watch(
                         <span class="block text-500 font-medium mb-3">Money you made</span>
                         <div class="text-900 font-medium text-xl">$2100</div>
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-orange-100 border-round" style="width: 2.5rem; height: 2.5rem">
-                        <i class="pi pi-map-marker text-orange-500 text-xl"></i>
+                    <div class="flex align-items-center justify-content-center border-round border-1 border-primary" style="width: 2.5rem; height: 2.5rem">
+                        <i class="pi pi-dollar text-primary text-xl"></i>
                     </div>
                 </div>
                 <!-- <span class="text-green-500 font-medium">%52+ </span>
@@ -228,8 +228,8 @@ watch(
         </div>
         <!-- Employees statistics end -->
 
+        <!-- reminders start -->
         <div class="col-12 xl:col-6">
-            <!-- reminders start -->
             <div class="card">
                 <div class="flex align-items-center justify-content-between mb-4">
                     <h5>Reminders</h5>
@@ -242,11 +242,11 @@ watch(
                             >Richard Jones
                             <span class="text-700">has purchased a blue t-shirt for 79$</span>
                         </span>
-                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" rounded outlined class="mb-2" />
+                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" outlined class="mb-2" />
                     </li>
                     <li class="flex align-items-center justify-content-between py-2">
                         <span class="text-700 line-height-3mr-3">Your request for withdrawal of 2500$ has been initiated.</span>
-                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" rounded outlined class="mb-2" />
+                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" outlined class="mb-2" />
                     </li>
                 </ul>
 
@@ -259,19 +259,19 @@ watch(
                             <Button label="Ok" @click="close" icon="pi pi-check" class="p-button-outlined"></Button>
                         </template>
                     </Dialog>
-                    <Button icon="pi pi-plus" @click="open" rounded class="mb-2" />
+                    <Button icon="pi pi-plus" @click="open" class="mb-2" />
                 </div>
                 <ul class="p-0 m-0 list-none">
                     <li class="flex align-items-center justify-content-between py-2 border-bottom-1 surface-border">
                         <span class="text-900 line-height-3 mr-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas error porro asperiores quasi? Nesciunt illum, sunt dolorem </span>
-                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-times" severity="danger" rounded outlined class="mb-2" />
+                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-times" severity="danger" outlined class="mb-2" />
                     </li>
                     <li class="flex align-items-center justify-content-between py-2">
                         <span class="text-900 line-height-3 mr-3"
                             >Jane Davis
                             <span class="text-700">has posted a new questions about your product.</span>
                         </span>
-                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-times" severity="danger" rounded outlined class="mb-2" />
+                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-times" severity="danger" outlined class="mb-2" />
                     </li>
                 </ul>
             </div>
@@ -284,11 +284,13 @@ watch(
             </div>
             <!-- incomes VS expenses end -->
         </div>
+
         <div class="col-12 xl:col-6">
             <!-- projects progress start -->
             <div class="card">
                 <div class="flex justify-content-between align-items-center mb-5">
                     <h5>Projects Progress</h5>
+                    <Button label="Create project" icon="pi pi-plus"></Button>
                 </div>
                 <ul class="list-none p-0 m-0">
                     <li class="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
@@ -298,9 +300,9 @@ watch(
                         </div>
                         <div class="mt-2 md:mt-0 flex align-items-center">
                             <div class="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style="height: 8px">
-                                <div class="bg-orange-500 h-full" style="width: 50%"></div>
+                                <div class="bg-primary-500 h-full" style="width: 50%"></div>
                             </div>
-                            <span class="text-orange-500 ml-3 font-medium">%50</span>
+                            <span class="text-primary-500 ml-3 font-medium">%50</span>
                         </div>
                     </li>
                 </ul>
@@ -309,8 +311,9 @@ watch(
 
             <!-- Tasks start -->
             <div class="card">
-                <div class="flex align-items-center justify-content-between">
+                <div class="flex align-items-center justify-content-between mb-5">
                     <h5>General Tasks</h5>
+                    <Button label="Assign task" icon="pi pi-plus"></Button>
                 </div>
 
                 <!-- <span class="block text-600 font-medium mb-3">ALL PROJECTS</span> -->
@@ -320,14 +323,13 @@ watch(
                             >Richard Jones
                             <span class="text-700">has purchased a blue t-shirt for 79$</span>
                         </span>
-                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" rounded outlined class="mb-2" />
+                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" outlined class="mb-2" />
                     </li>
                     <li class="flex align-items-center justify-content-between py-2">
                         <span class="text-700 line-height-3mr-3">Your request for withdrawal of 2500$ has been initiated.</span>
-                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" rounded outlined class="mb-2" />
+                        <Button style="min-width: 35px; min-height: 35px" icon="pi pi-eye" severity="primary" outlined class="mb-2" />
                     </li>
                 </ul>
-
             </div>
             <!-- Tasks end -->
         </div>
