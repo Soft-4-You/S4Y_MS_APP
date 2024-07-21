@@ -15,9 +15,7 @@ const knobValue = ref(50);
         </div>
         <div class="col-12 md:col-8">
             <Panel header="Information" :toggleable="true">
-                <p class="line-height-3 m-0">
-                    Description: Lorem ipsum dolor sit amet, Lorem, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, dolor beatae. Voluptatum repudiandae similique quidem aspernatur excepturi quia cupiditate ea, dolor
-                </p>
+                <p class="line-height-3 m-0">Category: Management system</p>
                 <hr />
                 <p class="line-height-3 m-0">Project manager: <a class="text-primary font-bold">Yousif Al-Tikriti</a></p>
                 <hr />

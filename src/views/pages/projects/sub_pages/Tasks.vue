@@ -169,20 +169,20 @@ const closeAddDialog = () => {
                 <!-- edit dialog  -->
                 <Dialog header="Edit Task" v-model:visible="editDialog" :style="{ width: '30%' }" :modal="true">
                     <div class="field grid">
-                        <label for="name3" class="col-12 mb-2 xl:col-3 xl:mb-0">Task name</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="name3" class="col-12 mb-2">Task name</label>
+                        <div class="col-12">
                             <InputText id="name3" type="text" />
                         </div>
                     </div>
                     <div class="field grid">
-                        <label for="email3" class="col-12 mb-2 xl:col-3 xl:mb-0">Details</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="email3" class="col-12 mb-2">Details</label>
+                        <div class="col-12">
                             <InputText id="email3" type="text" />
                         </div>
                     </div>
                     <div class="field grid">
-                        <label for="email3" class="col-12 mb-2 xl:col-3 xl:mb-0">Deadline</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="email3" class="col-12 mb-2">Deadline</label>
+                        <div class="col-12">
                             <Calendar :showIcon="true" :showButtonBar="true" v-model="calendarValue"></Calendar>
                         </div>
                     </div>
@@ -195,26 +195,26 @@ const closeAddDialog = () => {
                 <!-- Add task dialog -->
                 <Dialog header="Add Task" v-model:visible="addDialog" :style="{ width: '30%' }" :modal="true">
                     <div class="field grid">
-                        <label for="name3" class="col-12 mb-2 xl:col-3 xl:mb-0">Task name</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="name3" class="col-12 mb-2">Task name</label>
+                        <div class="col-12">
                             <InputText id="name3" type="text" />
                         </div>
                     </div>
                     <div class="field grid">
-                        <label for="email3" class="col-12 mb-2 xl:col-3 xl:mb-0">Details</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="email3" class="col-12 mb-2">Details</label>
+                        <div class="col-12">
                             <InputText id="email3" type="text" />
                         </div>
                     </div>
                     <div class="field grid">
-                        <label for="email3" class="col-12 mb-2 xl:col-3 xl:mb-0">Deadline</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="email3" class="col-12 mb-2">Deadline</label>
+                        <div class="col-12">
                             <Calendar :showIcon="true" :showButtonBar="true" v-model="calendarValue"></Calendar>
                         </div>
                     </div>
                     <div class="field grid">
-                        <label for="email3" class="col-12 mb-2 xl:col-3 xl:mb-0">Assign to</label>
-                        <div class="col-12 xl:col-9">
+                        <label for="email3" class="col-12 mb-2">Assign to</label>
+                        <div class="col-12">
                             <Listbox v-model="selectedMember" :options="memberList" optionLabel="name" filter />
                             <!-- For debugging purposes -->
                             <!-- <p>Selected Member: {{ selectedMember.name }}</p> -->

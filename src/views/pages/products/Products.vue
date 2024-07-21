@@ -3,7 +3,7 @@ import { ref, onMounted } from 'vue';
 import { ProductService } from '@/service/ProductService';
 
 const dataviewValue = ref(null);
-const layout = ref('grid');
+const layout = ref('list');
 const sortKey = ref(null);
 const sortOrder = ref(null);
 const sortField = ref(null);
@@ -48,14 +48,69 @@ const getSeverity = (product) => {
             return null;
     }
 };
+
+const openAddDialog = () => {
+    currentStep.value = 0;
+    nextBtn.value = 'Next';
+    isDisable.value = true;
+    addDialog.value = true;
+};
+
+const closeAddDialog = () => {
+    addDialog.value = false;
+};
+
+const stepperItems = ref([
+    {
+        label: 'Product info.'
+    },
+    {
+        label: 'Packages info.'
+    }
+]);
+
+const addDialog = ref(false);
+const productTypes = ref([{ type: 'normal' }, { type: 'subscription-based' }]);
+const productTypeValue = ref(null);
+const currentStep = ref(0);
+const nextBtn = ref('Next');
+const isDisable = ref(false);
+const packagePrice1 = ref();
+const packagePrice2 = ref();
+const packagePrice3 = ref();
+
+const nextStep = () => {
+    if (currentStep.value < 1) {
+        currentStep.value++;
+        isDisable.value = false;
+    }
+
+    if (currentStep.value === 1) {
+        nextBtn.value = 'Add';
+    }
+};
+
+const prevStep = () => {
+    if (currentStep.value !== 0) {
+        currentStep.value--;
+    }
+
+    if (currentStep.value === 0) {
+        isDisable.value = true;
+        nextBtn.value = 'Next';
+    }
+};
 </script>
 
 <template>
     <div class="grid">
         <div class="col-12">
             <div class="card">
-                <h5>Products</h5>
-                <DataView :value="dataviewValue" :layout="layout" :paginator="true" :rows="9" :sortOrder="sortOrder" :sortField="sortField">
+                <div class="flex align-items-center justify-content-between mb-3">
+                    <h5>Products</h5>
+                    <Button @click="openAddDialog" label="Add product" icon="pi pi-plus"></Button>
+                </div>
+                <DataView :value="dataviewValue" :layout="layout" :sortOrder="sortOrder" :sortField="sortField">
                     <template #header>
                         <div class="grid grid-nogutter">
                             <div class="col-6 text-left">
@@ -76,9 +131,9 @@ const getSeverity = (product) => {
                                     </div>
                                     <div class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4">
                                         <div class="flex flex-row md:flex-column justify-content-between align-items-start gap-2">
-                                            <div>
-                                                <span class="font-medium text-secondary text-sm">{{ item.category }}</span>
-                                                <div class="text-lg font-medium text-900 mt-2">{{ item.name }}</div>
+                                            <div lass="mb-2">
+                                                <div class="text-lg font-medium text-900 mb-2">{{ item.name }}</div>
+                                                <span class="font-medium text-secondary text-sm">Product type</span>
                                             </div>
                                             <div class="surface-100 p-1" style="border-radius: 30px">
                                                 <div class="surface-0 flex align-items-center gap-2 justify-content-center py-1 px-2" style="border-radius: 30px; box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.04), 0px 1px 2px 0px rgba(0, 0, 0, 0.06)">
@@ -133,7 +188,119 @@ const getSeverity = (product) => {
                         </div>
                     </template>
                 </DataView>
+                <!-- Create dialog -->
+                <Dialog header="Add Product" v-model:visible="addDialog" :modal="true" style="max-height: 500px" class="add-product-dialog">
+                    <!-- normal product stepper -->
+                    <Steps v-model:activeStep="currentStep" :readonly="false" :model="stepperItems" class="mb-6" />
+                    <div v-if="currentStep === 0">
+                        <div class="field grid">
+                            <label for="type" class="col-12 mb-2">Type</label>
+                            <div class="col-12">
+                                <Dropdown id="type" v-model="productTypeValue" :options="productTypes" optionLabel="type" placeholder="Select type ..." />
+                            </div>
+                        </div>
+                        <div class="field grid">
+                            <label for="name" class="col-12 mb-2">Name</label>
+                            <div class="col-12">
+                                <InputText id="name" type="text" placeholder="Name ..." />
+                            </div>
+                        </div>
+                        <div class="field grid">
+                            <label for="description" class="col-12 mb-2">Description</label>
+                            <div class="col-12">
+                                <Textarea id="description" placeholder="Description ..." :autoResize="true" rows="3" />
+                            </div>
+                        </div>
+                    </div>
+                    <div v-else-if="currentStep === 1">
+                        <div>
+                            <h5 class="text-primary">1st package</h5>
+                            <div class="field grid">
+                                <label for="name1" class="col-12 mb-2">Name</label>
+                                <div class="col-12">
+                                    <InputText id="name1" type="text" placeholder="Name ..." />
+                                </div>
+                            </div>
+                            <div v-if="productTypeValue.type === 'normal'" class="field grid">
+                                <label for="price" class="col-12 mb-2">Price</label>
+                                <div class="col-12">
+                                    <InputNumber v-model="packagePrice1" inputId="currency-us" mode="currency" currency="USD" locale="en-US" placeholder="$#,##" />
+                                </div>
+                            </div>
+                            <div v-if="productTypeValue.type === 'subscription-based'" class="field grid">
+                                <label for="price" class="col-12 mb-2">Cost per month</label>
+                                <div class="col-12">
+                                    <InputNumber v-model="packagePrice1" inputId="currency-us" mode="currency" currency="USD" locale="en-US" placeholder="$#,##" />
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div>
+                            <h5 class="text-primary">2nd package</h5>
+                            <div class="field grid">
+                                <label for="name2" class="col-12 mb-2">Name</label>
+                                <div class="col-12">
+                                    <InputText id="name2" type="text" placeholder="Name ..." />
+                                </div>
+                            </div>
+                            <div v-if="productTypeValue.type === 'normal'" class="field grid">
+                                <label for="price" class="col-12 mb-2">Price</label>
+                                <div class="col-12">
+                                    <InputNumber v-model="packagePrice2" inputId="currency-us" mode="currency" currency="USD" locale="en-US" placeholder="$#,##" />
+                                </div>
+                            </div>
+                            <div v-if="productTypeValue.type === 'subscription-based'" class="field grid">
+                                <label for="price" class="col-12 mb-2">Cost per month</label>
+                                <div class="col-12">
+                                    <InputNumber v-model="packagePrice2" inputId="currency-us" mode="currency" currency="USD" locale="en-US" placeholder="$#,##" />
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div>
+                            <h5 class="text-primary">3nd package</h5>
+                            <div class="field grid">
+                                <label for="name3" class="col-12 mb-2">Name</label>
+                                <div class="col-12">
+                                    <InputText id="name3" type="text" placeholder="Name ..." />
+                                </div>
+                            </div>
+                            <div v-if="productTypeValue.type === 'normal'" class="field grid">
+                                <label for="price" class="col-12 mb-2">Price</label>
+                                <div class="col-12">
+                                    <InputNumber v-model="packagePrice3" inputId="currency-us" mode="currency" currency="USD" locale="en-US" placeholder="$#,##" />
+                                </div>
+                            </div>
+                            <div v-if="productTypeValue.type === 'subscription-based'" class="field grid">
+                                <label for="price" class="col-12 mb-2">Cost per month</label>
+                                <div class="col-12">
+                                    <InputNumber v-model="packagePrice3" inputId="currency-us" mode="currency" currency="USD" locale="en-US" placeholder="$#,##" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- subs product stepper -->
+                    <template #footer>
+                        <div class="mt-3">
+                            <Button label="cancel" icon="pi pi-times" @click="closeAddDialog" class="p-button-text" severity="danger" />
+                            <Button label="previous" :disabled="isDisable" icon="pi pi-chevron-left" @click="prevStep" class="p-button-text" />
+                            <Button :label="nextBtn" icon="pi pi-chevron-right" @click="nextStep" class="p-button-text" />
+                        </div>
+                    </template>
+                </Dialog>
             </div>
         </div>
     </div>
 </template>
+
+<style>
+.p-inputtext,
+.p-inputnumber,
+.add-product-dialog .p-dropdown {
+    width: 100%;
+}
+
+.p-listbox-list-wrapper {
+    max-height: 100px;
+}
+</style>

@@ -3,9 +3,17 @@ import { ref, onMounted } from 'vue';
 import { ProductService } from '@/service/ProductService';
 
 const dataviewValue = ref(null);
-const layout = ref('grid');
+const layout = ref('list');
 const sortOrder = ref(null);
 const sortField = ref(null);
+const createProjectDialog = ref(false);
+const openCreateProjectDialog = () => {
+    createProjectDialog.value = true;
+};
+
+const closeCreateProjectDialog = () => {
+    createProjectDialog.value = false;
+};
 
 const productService = new ProductService();
 
@@ -18,10 +26,16 @@ onMounted(() => {
     <div class="grid">
         <div class="col-12">
             <div class="card">
-                <h5>Projects</h5>
-                <DataView :value="dataviewValue" :layout="layout" :paginator="true" :rows="9" :sortOrder="sortOrder" :sortField="sortField">
+                <div class="flex align-items-center justify-content-between mb-3">
+                    <h5>Projects</h5>
+                    <Button @click="openCreateProjectDialog" label="Create project" icon="pi pi-plus"></Button>
+                </div>
+                <DataView :value="dataviewValue" :layout="layout" :sortOrder="sortOrder" :sortField="sortField">
                     <template #header>
                         <div class="grid grid-nogutter">
+                            <div class="col-6 text-left">
+                                <Dropdown v-model="sortKey" :options="sortOptions" optionLabel="label" placeholder="Sort By Price" @change="onSortChange($event)" />
+                            </div>
                             <div class="col-6 text-right ml-auto">
                                 <DataViewLayoutOptions v-model="layout" />
                             </div>
@@ -34,9 +48,9 @@ onMounted(() => {
                                 <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3" :class="{ 'border-top-1 surface-border': index !== 0 }">
                                     <div class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4">
                                         <div class="flex flex-row md:flex-column justify-content-between align-items-start gap-2">
-                                            <div>
+                                            <div class="mb-2">
+                                                <div class="text-lg font-medium text-900 mb-2">Project name</div>
                                                 <span class="font-medium text-secondary text-sm">Client name</span>
-                                                <div class="text-lg font-medium text-900 my-2">Project name</div>
                                             </div>
                                             <Tag icon="pi pi-check" severity="success" value="Done"></Tag>
                                             <Tag icon="pi pi-clock" severity="warning" value="Pending"></Tag>
@@ -82,6 +96,32 @@ onMounted(() => {
                         </div>
                     </template>
                 </DataView>
+                <Dialog header="Edit Project" v-model:visible="createProjectDialog" :modal="true" class="edit-project-dialog">
+                    <div class="field grid">
+                        <label for="name" class="col-12 mb-2">Name</label>
+                        <div class="col-12">
+                            <InputText id="name" type="text" placeholder="Soft 4 You ..." />
+                        </div>
+                    </div>
+                    <div class="field grid">
+                        <label for="category" class="col-12 mb-2">Category</label>
+                        <div class="col-12">
+                            <InputText id="category" type="text" placeholder="Management system ..." />
+                        </div>
+                    </div>
+                    <div class="field grid">
+                        <label class="col-12 mb-2">Deadline</label>
+                        <div class="col-12">
+                            <Calendar :showIcon="true" :showButtonBar="true" v-model="projectDeadline"></Calendar>
+                        </div>
+                    </div>
+                    <template #footer>
+                        <div class="mt-3">
+                            <Button label="cancel" icon="pi pi-times" @click="closeCreateProjectDialog" class="p-button-text" />
+                            <Button label="Create" icon="pi pi-check" @click="closeCreateProjectDialog" class="p-button-text" />
+                        </div>
+                    </template>
+                </Dialog>
             </div>
         </div>
     </div>
