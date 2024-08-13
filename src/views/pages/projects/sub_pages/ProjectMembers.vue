@@ -1,8 +1,9 @@
 <script setup>
-import { ref, onBeforeMount, reactive } from 'vue';
+import { ref, onBeforeMount, reactive, onMounted } from 'vue';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import { CustomerService } from '@/service/CustomerService';
 import { ProductService } from '@/service/ProductService';
+import { CountryService } from '@/service/CountryService';
 import { useToast } from 'primevue/usetoast';
 import { useConfirm } from 'primevue/useconfirm';
 
@@ -13,12 +14,13 @@ const filters1 = ref(null);
 const loading1 = ref(null);
 const loading2 = ref(null);
 const products = ref(null);
+const switchValue = ref(false);
 const statuses = reactive(['unqualified', 'qualified', 'new', 'negotiation', 'renewal', 'proposal']);
 const toast = useToast();
 const confirmPopup = useConfirm();
 const editDialog = ref(false);
 const addDialog = ref(false);
-const selectedMember = ref(null);
+const selectedMember = ref([]);
 const memberList = ref([{ name: 'New York' }, { name: 'Rome' }, { name: 'London' }, { name: 'Istanbul' }, { name: 'Paris' }]);
 
 const customerService = new CustomerService();
@@ -71,6 +73,27 @@ const initFilters1 = () => {
     };
 };
 
+const autoValue = ref(null);
+const selectedAutoValue = ref(null);
+const autoFilteredValue = ref([]);
+const countryService = new CountryService();
+
+onMounted(() => {
+    countryService.getCountries().then((data) => (autoValue.value = data));
+});
+
+const searchCountry = (event) => {
+    setTimeout(() => {
+        if (!event.query.trim().length) {
+            autoFilteredValue.value = [...autoValue.value];
+        } else {
+            autoFilteredValue.value = autoValue.value.filter((country) => {
+                return country.name.toLowerCase().startsWith(event.query.toLowerCase());
+            });
+        }
+    }, 250);
+};
+
 const confirm = (event) => {
     confirmPopup.require({
         target: event.target,
@@ -100,6 +123,12 @@ const openEditDialog = () => {
 const closeEditDialog = () => {
     editDialog.value = false;
 };
+
+let test = ref();
+
+function transformArrayToString(array) {
+    test = array.map((item) => item.name).join(', ');
+}
 </script>
 
 <template>
@@ -107,7 +136,7 @@ const closeEditDialog = () => {
         <div class="col-12">
             <div class="card">
                 <div class="flex align-items-center justify-content-between mb-3">
-                    <h5>Client comments</h5>
+                    <h5>Project Members</h5>
                     <Button @click="openAddDialog" label="Add member" icon="pi pi-plus" style="width: 150px" />
                 </div>
                 <DataTable
@@ -127,6 +156,9 @@ const closeEditDialog = () => {
                     <Column field="name" header="Name" style="min-width: 12rem">
                         <template #body="{ data }">
                             {{ data.name }}
+                            <span>
+                                <i class="pi pi-prime text-primary"></i>
+                            </span>
                         </template>
                     </Column>
                     <Column field="status" header="Role" :filterMenuStyle="{ width: '14rem' }" style="min-width: 12rem">
@@ -159,19 +191,17 @@ const closeEditDialog = () => {
                 <!-- Add member dialog -->
                 <Dialog header="Add Member" v-model:visible="addDialog" :style="{ width: '30%' }" :modal="true">
                     <div class="field grid">
-                        <label for="email3" class="col-12 mb-2">Choose member</label>
+                        <label class="col-12 mb-2">Choose member</label>
                         <div class="col-12">
-                            <Listbox v-model="selectedMember" :options="memberList" optionLabel="name" filter />
-                            <!-- For debugging purposes -->
-                            <!-- <p>Selected Member: {{ selectedMember.name }}</p> -->
+                            <AutoComplete placeholder="Search" id="project-member" :dropdown="true" v-model="selectedAutoValue" :suggestions="autoFilteredValue" @complete="searchCountry($event)" field="name" />
                         </div>
                     </div>
                     <div class="field grid">
                         <label for="email3" class="col-12 mb-2">Choose role</label>
                         <div class="col-12">
-                            <Listbox v-model="selectedMember" :options="memberList" optionLabel="name" filter />
+                            <Listbox v-model="selectedMember" :options="memberList" optionLabel="name" filter multiple />
                             <!-- For debugging purposes -->
-                            <!-- <p>Selected Member: {{ selectedMember.name }}</p> -->
+                            <!-- <p>Selected Member: {{ selectedMember }}</p> -->
                         </div>
                     </div>
                     <template #footer>
@@ -184,11 +214,18 @@ const closeEditDialog = () => {
                     <div class="field grid">
                         <label for="email3" class="col-12 mb-2">Choose role</label>
                         <div class="col-12">
-                            <Listbox v-model="selectedMember" :options="memberList" optionLabel="name" filter />
+                            <Listbox v-model="selectedMember" :change="transformArrayToString(selectedMember)" :options="memberList" optionLabel="name" filter multiple />
                             <!-- For debugging purposes -->
-                            <!-- <p>Selected Member: {{ selectedMember.name }}</p> -->
+                            <!-- <p>Selected Member: {{ test }}</p> -->
                         </div>
                     </div>
+                    <div class="field grid">
+                        <label class="col-12 mb-2">Project manager <i class="pi pi-prime text-primary ml-2"></i></label>
+                        <div class="col-12">
+                            <InputSwitch v-model="switchValue" />
+                        </div>
+                    </div>
+
                     <template #footer>
                         <Button label="Cancel" icon="pi pi-times" @click="closeEditDialog" class="p-button-text" />
                         <Button label="Edit" icon="pi pi-pencil" @click="closeEditDialog" class="p-button-text" autofocus />
@@ -198,3 +235,9 @@ const closeEditDialog = () => {
         </div>
     </div>
 </template>
+
+<style>
+.p-autocomplete {
+    width: 100%;
+}
+</style>

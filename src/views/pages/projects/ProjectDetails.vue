@@ -200,7 +200,7 @@ const prevStep = () => {
                 </template>
             </Dialog>
             <!-- make product dialog  -->
-            <Dialog header="Make it Product" v-model:visible="makeProductDialog" :modal="true" style="max-height: 500px" class="add-product-dialog">
+            <Dialog header="Make it Product" v-model:visible="makeProductDialog" :modal="true" style="max-height: 500px" class="make-product-dialog">
                 <Steps v-model:activeStep="currentStep" :readonly="false" :model="stepperItems" class="mb-6" />
                 <div v-if="currentStep === 0">
                     <div class="field grid">
@@ -309,7 +309,8 @@ const prevStep = () => {
 .p-inputtext,
 .p-inputnumber,
 .p-calendar,
-.edit-project-dialog .p-dropdown {
+.edit-project-dialog .p-dropdown,
+.make-product-dialog .p-dropdown {
     width: 100%;
 }
 </style>

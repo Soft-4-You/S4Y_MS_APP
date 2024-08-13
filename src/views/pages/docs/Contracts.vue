@@ -1,14 +1,21 @@
 <script setup>
 import { ref, onBeforeMount, reactive } from 'vue';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
+import { useToast } from 'primevue/usetoast';
 import { CustomerService } from '@/service/CustomerService';
 
 const customer1 = ref(null);
 const filters1 = ref(null);
 const loading1 = ref(null);
 const loading2 = ref(null);
+const toast = useToast();
+const uploadDialog = ref(false);
 
 const customerService = new CustomerService();
+
+const onUpload = () => {
+    toast.add({ severity: 'success', summary: 'Success', detail: 'File Uploaded', life: 3000 });
+};
 
 onBeforeMount(() => {
     customerService.getCustomersLarge().then((data) => {
@@ -48,6 +55,16 @@ const items = ref([
         icon: 'pi pi-pencil'
     }
 ]);
+const contractType = ref('');
+const contractTypeList = ref(['Income', 'Expense']);
+
+const openUploadDialog = () => {
+    uploadDialog.value = true;
+};
+
+const closeUploadDialog = () => {
+    uploadDialog.value = false;
+};
 </script>
 
 <template>
@@ -55,10 +72,13 @@ const items = ref([
         <div class="col-12">
             <div class="card">
                 <h5>Contracts</h5>
-                <DataTable :value="customer1" :paginator="true" :rows="10" dataKey="id" :rowHover="true" v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1" :globalFilterFields="['name', 'status']" showGridlines>
+                <DataTable :value="customer1" :paginator="true" :rows="10" dataKey="id" :rowHover="true" v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1" :globalFilterFields="['name', 'status']">
                     <template #header>
-                        <div class="flex justify-content-between flex-column sm:flex-row">
-                            <Button type="button" icon="pi pi-filter-slash" label="Clear" outlined @click="clearFilter1()" />
+                        <div class="flex justify-content-between flex-column sm:flex-row mb-2">
+                            <div class="flex gap-2">
+                                <Button type="button" icon="pi pi-upload" label="Upload" @click="openUploadDialog" />
+                                <Button type="button" icon="pi pi-filter-slash" label="Clear" outlined @click="clearFilter1()" />
+                            </div>
                             <IconField iconPosition="left">
                                 <InputIcon class="pi pi-search" />
                                 <InputText v-model="filters1['global'].value" placeholder="Keyword Search" style="width: 100%" />
@@ -68,7 +88,7 @@ const items = ref([
                     <template #empty> No contracts found. </template>
                     <template #loading> Loading contracts data. Please wait. </template>
 
-                    <Column field="name" header="Client" style="min-width: 12rem">
+                    <Column field="name" header="Opposite party" style="min-width: 12rem">
                         <template #body="{ data }">
                             {{ data.name }}
                         </template>
@@ -76,10 +96,14 @@ const items = ref([
                             <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
                         </template>
                     </Column>
-                    <Column field="name" header="Client Type" style="min-width: 12rem">
-                        <template #body="{ data }">
-                            {{ data.name }}
+                    <Column field="name" header="Category" style="min-width: 12rem">
+                        <template #body="{ data }"> employee/client </template>
+                        <template #filter="{ filterModel }">
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
                         </template>
+                    </Column>
+                    <Column field="name" header="Project" style="min-width: 12rem">
+                        <template #body="{ data }"> Project name for the client </template>
                         <template #filter="{ filterModel }">
                             <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
                         </template>
@@ -106,7 +130,63 @@ const items = ref([
                         </template>
                     </Column>
                 </DataTable>
+                <!-- Create dialog -->
+                <Dialog header="Add Contract" v-model:visible="uploadDialog" :modal="true" style="max-height: 500px" class="add-product-dialog">
+                    <p class="mb-4"><i class="pi pi-exclamation-circle"></i> Project's contracts are added from the project page!</p>
+                    <div class="field grid">
+                        <label class="col-12 mb-2"> Opposite party</label>
+                        <div class="col-12">
+                            <AutoComplete placeholder="Search" id="project-member" :dropdown="true" v-model="selectedAutoValue" :suggestions="autoFilteredValue" @complete="searchCountry($event)" field="name" />
+                        </div>
+                    </div>
+                    <div class="field grid">
+                        <label for="type" class="col-12 mb-2">Category</label>
+                        <div class="col-12">
+                            <Dropdown id="type" v-model="contractType" :options="contractTypeList" placeholder="Select type ..." />
+                        </div>
+                    </div>
+                    <div class="field grid">
+                        <label class="col-12 mb-2">Due date</label>
+                        <div class="col-12">
+                            <Calendar :showIcon="true" :showButtonBar="true" v-model="projectDeadline"></Calendar>
+                        </div>
+                    </div>
+                    <div class="field grid">
+                        <label for="price" class="col-12 mb-2">Contract file</label>
+                        <div class="col-12">
+                            <FileUpload name="demo[]" @upload="onUpload" :multiple="true" accept="image/*" :maxFileSize="1000000">
+                                <template #empty>
+                                    <p>Drag and drop files to here to upload.</p>
+                                </template>
+                            </FileUpload>
+                        </div>
+                    </div>
+
+                    <!--
+                     DO NOT ADD CONTRACT FOR PROJECTS HERE, PROJECTS CONTRACTS WILL BE ADDED FROM THE PROJECT ITSELF.
+                     -->
+                    <template #footer>
+                        <div class="mt-3">
+                            <Button label="cancel" icon="pi pi-times" @click="closeUploadDialog" class="p-button-text" severity="danger" />
+                            <Button label="Upload" icon="pi pi-upload" @click="closeUploadDialog" class="p-button-text" />
+                        </div>
+                    </template>
+                </Dialog>
             </div>
         </div>
     </div>
 </template>
+
+<style>
+.p-inputtext,
+.p-inputnumber,
+.p-calendar,
+.p-autocomplete,
+.add-product-dialog .p-dropdown {
+    width: 100%;
+}
+
+.p-listbox-list-wrapper {
+    max-height: 100px;
+}
+</style>

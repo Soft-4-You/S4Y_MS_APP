@@ -1,11 +1,15 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { ProductService } from '@/service/ProductService';
+import { CountryService } from '@/service/CountryService';
 
 const dataviewValue = ref(null);
 const layout = ref('list');
 const sortOrder = ref(null);
 const sortField = ref(null);
+const autoValue = ref(null);
+const selectedAutoValue = ref(null);
+const autoFilteredValue = ref([]);
 const createProjectDialog = ref(false);
 const openCreateProjectDialog = () => {
     createProjectDialog.value = true;
@@ -15,11 +19,25 @@ const closeCreateProjectDialog = () => {
     createProjectDialog.value = false;
 };
 
+const countryService = new CountryService();
 const productService = new ProductService();
 
 onMounted(() => {
+    countryService.getCountries().then((data) => (autoValue.value = data));
     productService.getProductsSmall().then((data) => (dataviewValue.value = data));
 });
+
+const searchCountry = (event) => {
+    setTimeout(() => {
+        if (!event.query.trim().length) {
+            autoFilteredValue.value = [...autoValue.value];
+        } else {
+            autoFilteredValue.value = autoValue.value.filter((country) => {
+                return country.name.toLowerCase().startsWith(event.query.toLowerCase());
+            });
+        }
+    }, 250);
+};
 </script>
 
 <template>
@@ -96,7 +114,8 @@ onMounted(() => {
                         </div>
                     </template>
                 </DataView>
-                <Dialog header="Edit Project" v-model:visible="createProjectDialog" :modal="true" class="edit-project-dialog">
+                <!-- Create project dialog  -->
+                <Dialog header="Create Project" v-model:visible="createProjectDialog" :modal="true" class="create-project-dialog">
                     <div class="field grid">
                         <label for="name" class="col-12 mb-2">Name</label>
                         <div class="col-12">
@@ -115,6 +134,12 @@ onMounted(() => {
                             <Calendar :showIcon="true" :showButtonBar="true" v-model="projectDeadline"></Calendar>
                         </div>
                     </div>
+                    <div class="field grid">
+                        <label class="col-12 mb-2">Client (optional)</label>
+                        <div class="col-12">
+                            <AutoComplete placeholder="Search" id="dd" :dropdown="true" v-model="selectedAutoValue" :suggestions="autoFilteredValue" @complete="searchCountry($event)" field="name" />
+                        </div>
+                    </div>
                     <template #footer>
                         <div class="mt-3">
                             <Button label="cancel" icon="pi pi-times" @click="closeCreateProjectDialog" class="p-button-text" />
@@ -126,3 +151,12 @@ onMounted(() => {
         </div>
     </div>
 </template>
+
+<style>
+.p-inputtext,
+.p-inputnumber,
+.p-calendar,
+.p-autocomplete {
+    width: 100%;
+}
+</style>
