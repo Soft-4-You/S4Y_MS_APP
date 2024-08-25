@@ -11,14 +11,13 @@ const model = ref([
     {
         label: 'Administration Pages',
         items: [
-            { label: 'Logs', icon: 'pi pi-fw pi-exclamation-circle', to: '/pages/logs' },
-            { label: 'Roles & Permissions', icon: 'pi pi-fw pi-verified', to: '/pages/roles_permissions' },
+            { label: 'Contracts', icon: 'pi pi-fw pi-file-edit', to: '/pages/contracts' },
             {
-                label: 'Documents',
-                icon: 'pi pi-fw pi-inbox',
+                label: 'Financial',
+                icon: 'pi pi-fw pi-dollar',
                 items: [
-                    { label: 'Contracts', icon: 'pi pi-fw pi-file-edit', to: '/pages/docs/contracts' },
-                    { label: 'Invoices', icon: 'pi pi-fw pi-money-bill', to: '/pages/docs/invoices' }
+                    { label: 'Incomes', icon: 'pi pi-fw pi-plus', to: '/pages/financial/incomes' },
+                    { label: 'Expenses', icon: 'pi pi-fw pi-minus', to: '/pages/financial/expenses' }
                 ]
             },
             {
@@ -30,21 +29,13 @@ const model = ref([
                     { label: 'Distributors', icon: 'pi pi-fw pi-building', to: '/pages/users/distributors' }
                 ]
             },
-            {
-                label: 'Financial',
-                icon: 'pi pi-fw pi-dollar',
-                items: [
-                    { label: 'Incomes', icon: 'pi pi-fw pi-plus', to: '/pages/financial/incomes' },
-                    { label: 'Expenses', icon: 'pi pi-fw pi-minus', to: '/pages/financial/expenses' },
-                    { label: 'Payments', icon: 'pi pi-fw pi-wallet', to: '/pages/financial/payments' }
-                ]
-            }
+            { label: 'Roles & Permissions', icon: 'pi pi-fw pi-verified', to: '/pages/roles_permissions' },
+            { label: 'Logs', icon: 'pi pi-fw pi-exclamation-circle', to: '/pages/logs' },
         ]
     },
     {
         label: 'Pages',
     items: [
-            { label: 'Reminders', icon: 'pi pi-fw pi-clock', to: '/pages/reminders' },
             { label: 'General Tasks', icon: 'pi pi-fw pi-check-square', to: '/pages/general_tasks' },
             { label: 'Projects', icon: 'pi pi-fw pi-code', to: '/pages/projects/projects' },
             { label: 'Products', icon: 'pi pi-fw pi-box', to: '/pages/products/products' }

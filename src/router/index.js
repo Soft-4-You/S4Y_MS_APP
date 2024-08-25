@@ -157,14 +157,9 @@ const router = createRouter({
                     component: () => import('@/views/pages/Profile.vue')
                 },
                 {
-                    path: '/pages/docs/contracts',
+                    path: '/pages/contracts',
                     name: 'contracts',
-                    component: () => import('@/views/pages/docs/Contracts.vue')
-                },
-                {
-                    path: '/pages/docs/invoices',
-                    name: 'invoices',
-                    component: () => import('@/views/pages/docs/Invoices.vue')
+                    component: () => import('@/views/pages/Contracts.vue')
                 },
                 {
                     path: '/pages/users/employees',
@@ -190,16 +185,6 @@ const router = createRouter({
                     path: '/pages/financial/expenses',
                     name: 'expenses',
                     component: () => import('@/views/pages/financial/Expenses.vue')
-                },
-                {
-                    path: '/pages/financial/payments',
-                    name: 'payments',
-                    component: () => import('@/views/pages/financial/Payments.vue')
-                },
-                {
-                    path: '/pages/reminders',
-                    name: 'reminders',
-                    component: () => import('@/views/pages/Reminders.vue')
                 },
                 {
                     path: '/pages/general_tasks',

@@ -90,7 +90,10 @@ const closeUploadDialog = () => {
 
                     <Column field="name" header="Opposite party" style="min-width: 12rem">
                         <template #body="{ data }">
-                            {{ data.name }}
+                            <div class="flex align-items-center gap-2">
+                                <img :alt="data.representative.name" :src="`https://primefaces.org/cdn/primevue/images/avatar/${data.representative.image}`" style="width: 32px" />
+                                <span>{{ data.name }}</span>
+                            </div>
                         </template>
                         <template #filter="{ filterModel }">
                             <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
@@ -102,8 +105,8 @@ const closeUploadDialog = () => {
                             <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
                         </template>
                     </Column>
-                    <Column field="name" header="Project" style="min-width: 12rem">
-                        <template #body="{ data }"> Project name for the client </template>
+                    <Column field="name" header="Related" style="min-width: 12rem">
+                        <template #body="{ data }"> Related to: project </template>
                         <template #filter="{ filterModel }">
                             <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
                         </template>

@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref, onBeforeMount, reactive } from 'vue';
 import { FilterMatchMode, FilterOperator } from 'primevue/api';
 import { CustomerService } from '@/service/CustomerService';
@@ -130,4 +130,12 @@ const formatDate = (value) => {
             </div>
         </div>
     </div>
+</template> -->
+
+<template>
+    <div className="card">
+        <h5>Coming later</h5>
+        <p>This page is under development.</p>
+    </div>
 </template>
+
