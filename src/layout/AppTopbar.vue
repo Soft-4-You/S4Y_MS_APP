@@ -2,12 +2,14 @@
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import { useLayout } from '@/layout/composables/layout';
 import { useRouter } from 'vue-router';
+import { useConfirm } from 'primevue/useconfirm';
 
 const { layoutConfig, onMenuToggle } = useLayout();
 
 const outsideClickListener = ref(null);
 const topbarMenuActive = ref(false);
 const router = useRouter();
+const confirmPopup = useConfirm();
 
 onMounted(() => {
     bindOutsideClickListener();
@@ -67,18 +69,32 @@ const isOutsideClicked = (event) => {
 
     return !(sidebarEl.isSameNode(event.target) || sidebarEl.contains(event.target) || topbarEl.isSameNode(event.target) || topbarEl.contains(event.target));
 };
+
+const confirm = (event) => {
+    confirmPopup.require({
+        target: event.target,
+        message: 'Are you sure you want to proceed?',
+        icon: 'pi pi-exclamation-triangle',
+        accept: () => {
+            onLogoutButton();
+        },
+        reject: () => {
+            return;
+        }
+    });
+};
 </script>
 
 <template>
     <div class="layout-topbar">
+        <button class="p-link layout-menu-button layout-topbar-button m-0 mr-2" @click="onMenuToggle()">
+            <i class="pi pi-bars text-white"></i>
+        </button>
+
         <router-link to="/" class="layout-topbar-logo">
             <img :src="logoUrl" alt="logo" />
             <span>Soft 4 You</span>
         </router-link>
-
-        <button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle()">
-            <i class="pi pi-bars"></i>
-        </button>
 
         <button class="p-link layout-topbar-menu-button layout-topbar-button" @click="onTopBarMenuButton()">
             <i class="pi pi-ellipsis-v"></i>
@@ -89,12 +105,11 @@ const isOutsideClicked = (event) => {
                 <i class="pi pi-user"></i>
                 <span>Profile</span>
             </button>
-            <button @click="onLogoutButton()" class="p-link layout-topbar-button">
+            <button @click="confirm($event)" class="p-link layout-topbar-button">
                 <i class="pi pi-sign-out"></i>
                 <span>Logout</span>
             </button>
+            <ConfirmPopup></ConfirmPopup>
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped></style>

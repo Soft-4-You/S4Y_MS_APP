@@ -72,7 +72,7 @@ const closeUploadDialog = () => {
         <div class="col-12">
             <div class="card">
                 <h5>Contracts</h5>
-                <DataTable :value="customer1" :paginator="true" :rows="10" dataKey="id" :rowHover="true" v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1" :globalFilterFields="['name', 'status']">
+                <DataTable :value="customer1" :paginator="true" :rows="15" dataKey="id" :rowHover="true" v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1" :globalFilterFields="['name', 'status']">
                     <template #header>
                         <div class="flex justify-content-between flex-column sm:flex-row mb-2">
                             <div class="flex gap-2">

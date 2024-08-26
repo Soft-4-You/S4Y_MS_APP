@@ -86,25 +86,17 @@ const formatDate = (value) => {
         <div class="col-12">
             <div class="card">
                 <h5>Employees</h5>
-                <DataTable
-                    :value="customer1"
-                    :paginator="true"
-                    :rows="10"
-                    dataKey="id"
-                    :rowHover="true"
-                    v-model:filters="filters1"
-                    filterDisplay="menu"
-                    :loading="loading1"
-                    :filters="filters1"
-                    :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']"
-                    showGridlines
-                >
+                <DataTable :value="customer1" :paginator="true" :rows="15" dataKey="id" :rowHover="true"
+                    v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1"
+                    :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']">
                     <template #header>
                         <div class="flex justify-content-between flex-column sm:flex-row">
-                            <Button type="button" icon="pi pi-filter-slash" label="Clear" outlined @click="clearFilter1()" />
+                            <Button type="button" icon="pi pi-filter-slash" label="Clear" outlined
+                                @click="clearFilter1()" />
                             <IconField iconPosition="left">
                                 <InputIcon class="pi pi-search" />
-                                <InputText v-model="filters1['global'].value" placeholder="Keyword Search" style="width: 100%" />
+                                <InputText v-model="filters1['global'].value" placeholder="Keyword Search"
+                                    style="width: 100%" />
                             </IconField>
                         </div>
                     </template>
@@ -113,12 +105,15 @@ const formatDate = (value) => {
                     <Column field="name" header="Name" style="min-width: 12rem">
                         <template #body="{ data }">
                             <div class="flex align-items-center gap-2">
-                                <img :alt="data.representative.name" :src="`https://primefaces.org/cdn/primevue/images/avatar/${data.representative.image}`" style="width: 32px" />
+                                <img :alt="data.representative.name"
+                                    :src="`https://primefaces.org/cdn/primevue/images/avatar/${data.representative.image}`"
+                                    style="width: 32px" />
                                 <span>{{ data.name }}</span>
                             </div>
                         </template>
                         <template #filter="{ filterModel }">
-                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter"
+                                placeholder="Search by name" />
                         </template>
                     </Column>
                     <Column header="Username" filterField="country.name" style="min-width: 12rem">
@@ -128,13 +123,16 @@ const formatDate = (value) => {
                             </div>
                         </template>
                         <template #filter="{ filterModel }">
-                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by country" />
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter"
+                                placeholder="Search by country" />
                         </template>
                         <template #filterclear="{ filterCallback }">
-                            <Button type="button" icon="pi pi-times" @click="filterCallback()" severity="secondary"></Button>
+                            <Button type="button" icon="pi pi-times" @click="filterCallback()"
+                                severity="secondary"></Button>
                         </template>
                         <template #filterapply="{ filterCallback }">
-                            <Button type="button" icon="pi pi-check" @click="filterCallback()" severity="success"></Button>
+                            <Button type="button" icon="pi pi-check" @click="filterCallback()"
+                                severity="success"></Button>
                         </template>
                     </Column>
                     <Column header="Email" filterField="country.name" style="min-width: 12rem">
@@ -144,35 +142,41 @@ const formatDate = (value) => {
                             </div>
                         </template>
                         <template #filter="{ filterModel }">
-                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by country" />
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter"
+                                placeholder="Search by country" />
                         </template>
                         <template #filterclear="{ filterCallback }">
-                            <Button type="button" icon="pi pi-times" @click="filterCallback()" severity="secondary"></Button>
+                            <Button type="button" icon="pi pi-times" @click="filterCallback()"
+                                severity="secondary"></Button>
                         </template>
                         <template #filterapply="{ filterCallback }">
-                            <Button type="button" icon="pi pi-check" @click="filterCallback()" severity="success"></Button>
+                            <Button type="button" icon="pi pi-check" @click="filterCallback()"
+                                severity="success"></Button>
                         </template>
                     </Column>
                     <Column field="status" header="Role" :filterMenuStyle="{ width: '14rem' }" style="width: 15rem">
                         <template #body="{ data }">
                             <div class="flex flex-wrap gap-2">
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
-                            <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
+                                <Tag :severity="getSeverity(data.status)">{{ data.status.toUpperCase() }}</Tag>
                             </div>
                         </template>
                         <template #filter="{ filterModel }">
-                            <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Any" class="p-column-filter" :showClear="true">
+                            <Dropdown v-model="filterModel.value" :options="statuses" placeholder="Any"
+                                class="p-column-filter" :showClear="true">
                                 <template #value="slotProps">
-                                    <Tag :severity="getSeverity(slotProps.value)" v-if="slotProps.value">{{ slotProps.value }} </Tag>
+                                    <Tag :severity="getSeverity(slotProps.value)" v-if="slotProps.value">{{
+                                        slotProps.value }} </Tag>
                                     <span v-else>{{ slotProps.placeholder }}</span>
                                 </template>
                                 <template #option="slotProps">
-                                    <Tag :severity="getSeverity(slotProps.option)">{{ slotProps.option.toUpperCase() }}</Tag>
+                                    <Tag :severity="getSeverity(slotProps.option)">{{ slotProps.option.toUpperCase() }}
+                                    </Tag>
                                 </template>
                             </Dropdown>
                         </template>
@@ -198,4 +202,3 @@ const formatDate = (value) => {
         </div>
     </div>
 </template>
-

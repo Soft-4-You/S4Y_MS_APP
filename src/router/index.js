@@ -253,15 +253,15 @@ const router = createRouter({
             component: () => import('@/views/pages/Landing.vue')
         },
         {
-            path: '/pages/notfound',
-            name: 'notfound',
-            component: () => import('@/views/pages/NotFound.vue')
-        },
-
-        {
             path: '/auth/login',
             name: 'login',
             component: () => import('@/views/pages/auth/Login.vue')
+        },
+        // catch all 404
+        {
+            path: '/:catchAll(.*)',
+            name: 'notfound',
+            component: () => import('@/views/pages/NotFound.vue')
         },
         {
             path: '/auth/access',

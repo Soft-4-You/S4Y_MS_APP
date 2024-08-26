@@ -124,7 +124,7 @@ const closeAddDialog = () => {
         <div class="col-12">
             <div class="card">
                 <h5>General Tasks</h5>
-                <DataTable :value="customer3" rowGroupMode="subheader" groupRowsBy="representative.name" sortMode="single" sortField="representative.name" :sortOrder="1" scrollable scrollHeight="600px">
+                <DataTable :value="customer3" rowGroupMode="subheader" groupRowsBy="representative.name" sortMode="single" sortField="representative.name" :sortOrder="1" scrollable scrollHeight="800px">
                     <Column field="representative.name" header="Representative"></Column>
                     <Column field="name" header="Task" style="min-width: 150px"></Column>
                     <Column field="country" header="Details" style="min-width: 200px">

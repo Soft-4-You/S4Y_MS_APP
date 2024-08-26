@@ -70,7 +70,7 @@ const formatDate = (value) => {
                 <DataTable
                     :value="customer1"
                     :paginator="true"
-                    :rows="10"
+                    :rows="15"
                     dataKey="id"
                     :rowHover="true"
                     v-model:filters="filters1"
@@ -78,7 +78,7 @@ const formatDate = (value) => {
                     :loading="loading1"
                     :filters="filters1"
                     :globalFilterFields="['name', 'country.name', 'representative.name', 'balance', 'status']"
-                    showGridlines
+                    
                 >
                     <template #header>
                         <div class="flex justify-content-between flex-column sm:flex-row">
@@ -150,9 +150,9 @@ const formatDate = (value) => {
                             <InputNumber v-model="filterModel.value" mode="currency" currency="USD" locale="en-US" />
                         </template>
                     </Column>
-                    <Column field="verified" header="Verified" dataType="boolean" bodyClass="text-center" style="min-width: 8rem">
+                    <Column field="verified" header="Activated" dataType="boolean" bodyClass="text-center" style="min-width: 8rem">
                         <template #body="{ data }">
-                            <i class="pi" :class="{ 'text-green-500 pi-check-circle': data.verified, 'text-pink-500 pi-times-circle': !data.verified }"></i>
+                            <i class="pi" :class="{ 'text-green-500 pi-check-circle': data.verified, 'text-red-600 pi-times-circle': !data.verified }"></i>
                         </template>
                         <template #filter="{ filterModel }">
                             <TriStateCheckbox v-model="filterModel.value" />
