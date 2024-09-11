@@ -101,18 +101,18 @@ const onCompactMaterialChange = (value) => {
         changeTheme(tokens[0].substring(0, 2), tokens[2]);
     }
 };
-const onFocusRingColorChange = (value) => {
-    primaryFocusRing.value = value;
-    let root = document.documentElement;
+// const onFocusRingColorChange = (value) => {
+//     primaryFocusRing.value = value;
+//     let root = document.documentElement;
 
-    if (value) {
-        if (layoutConfig.darkTheme.value) root.style.setProperty('--p-focus-ring-color', 'var(--primary-500)');
-        else root.style.setProperty('--p-focus-ring-color', 'var(--primary-500)');
-    } else {
-        if (layoutConfig.darkTheme.value) root.style.setProperty('--p-focus-ring-color', 'var(--surface-500)');
-        else root.style.setProperty('--p-focus-ring-color', 'var(--surface-900)');
-    }
-};
+//     if (value) {
+//         if (layoutConfig.darkTheme.value) root.style.setProperty('--p-focus-ring-color', 'var(--primary-500)');
+//         else root.style.setProperty('--p-focus-ring-color', 'var(--primary-500)');
+//     } else {
+//         if (layoutConfig.darkTheme.value) root.style.setProperty('--p-focus-ring-color', 'var(--surface-500)');
+//         else root.style.setProperty('--p-focus-ring-color', 'var(--surface-900)');
+//     }
+// };
 </script>
 
 <template>
@@ -244,10 +244,10 @@ const onFocusRingColorChange = (value) => {
                     <span class="w-3"></span>
                 </div>
 
-                <section class="pt-4 flex align-items-center justify-content-between">
+                <!-- <section class="pt-4 flex align-items-center justify-content-between">
                     <span class="text-sm">Primary Focus Ring</span>
                     <InputSwitch :modelValue="primaryFocusRing" @update:modelValue="onFocusRingColorChange" />
-                </section>
+                </section> -->
             </section>
 
             <section class="py-4 border-bottom-1 surface-border">

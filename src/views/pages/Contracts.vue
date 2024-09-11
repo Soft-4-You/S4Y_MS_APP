@@ -72,16 +72,20 @@ const closeUploadDialog = () => {
         <div class="col-12">
             <div class="card">
                 <h5>Contracts</h5>
-                <DataTable :value="customer1" :paginator="true" :rows="15" dataKey="id" :rowHover="true" v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1" :globalFilterFields="['name', 'status']">
+                <DataTable :value="customer1" :paginator="true" :rows="15" dataKey="id" :rowHover="true"
+                    v-model:filters="filters1" filterDisplay="menu" :loading="loading1" :filters="filters1"
+                    :globalFilterFields="['name', 'status']">
                     <template #header>
                         <div class="flex justify-content-between flex-column sm:flex-row mb-2">
                             <div class="flex gap-2">
                                 <Button type="button" icon="pi pi-upload" label="Upload" @click="openUploadDialog" />
-                                <Button type="button" icon="pi pi-filter-slash" label="Clear" outlined @click="clearFilter1()" />
+                                <Button type="button" icon="pi pi-filter-slash" label="Clear" outlined
+                                    @click="clearFilter1()" />
                             </div>
                             <IconField iconPosition="left">
                                 <InputIcon class="pi pi-search" />
-                                <InputText v-model="filters1['global'].value" placeholder="Keyword Search" style="width: 100%" />
+                                <InputText v-model="filters1['global'].value" placeholder="Keyword Search"
+                                    style="width: 100%" />
                             </IconField>
                         </div>
                     </template>
@@ -91,24 +95,29 @@ const closeUploadDialog = () => {
                     <Column field="name" header="Opposite party" style="min-width: 12rem">
                         <template #body="{ data }">
                             <div class="flex align-items-center gap-2">
-                                <img :alt="data.representative.name" :src="`https://primefaces.org/cdn/primevue/images/avatar/${data.representative.image}`" style="width: 32px" />
+                                <img :alt="data.representative.name"
+                                    :src="`https://primefaces.org/cdn/primevue/images/avatar/${data.representative.image}`"
+                                    style="width: 32px" />
                                 <span>{{ data.name }}</span>
                             </div>
                         </template>
                         <template #filter="{ filterModel }">
-                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter"
+                                placeholder="Search by name" />
                         </template>
                     </Column>
                     <Column field="name" header="Category" style="min-width: 12rem">
                         <template #body="{ data }"> employee/client </template>
                         <template #filter="{ filterModel }">
-                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter"
+                                placeholder="Search by name" />
                         </template>
                     </Column>
                     <Column field="name" header="Related" style="min-width: 12rem">
                         <template #body="{ data }"> Related to: project </template>
                         <template #filter="{ filterModel }">
-                            <InputText type="text" v-model="filterModel.value" class="p-column-filter" placeholder="Search by name" />
+                            <InputText type="text" v-model="filterModel.value" class="p-column-filter"
+                                placeholder="Search by name" />
                         </template>
                     </Column>
                     <Column header="Date" filterField="date" dataType="date" style="min-width: 10rem">
@@ -127,25 +136,36 @@ const closeUploadDialog = () => {
                             <Calendar v-model="filterModel.value" dateFormat="mm/dd/yy" placeholder="mm/dd/yyyy" />
                         </template>
                     </Column>
-                    <Column field="status" header="Actions" style="min-width: 12rem">
+                    <Column field="status" header="Contract" style="min-width: 8rem">
                         <template #body>
-                            <SplitButton label="View" :model="items"></SplitButton>
+                            <Button label="View" outlined />
+                        </template>
+                    </Column>
+                    <Column field="status" header="Actions" style="min-width: 8rem">
+                        <template #body>
+                            <Button icon="pi pi-pencil" severity="warning" class="mr-2"></Button>
+                            <Button icon="pi pi-trash" severity="danger"></Button>
                         </template>
                     </Column>
                 </DataTable>
                 <!-- Create dialog -->
-                <Dialog header="Add Contract" v-model:visible="uploadDialog" :modal="true" style="max-height: 500px" class="add-product-dialog">
-                    <p class="mb-4"><i class="pi pi-exclamation-circle"></i> Project's contracts are added from the project page!</p>
+                <Dialog header="Add Contract" v-model:visible="uploadDialog" :modal="true" style="max-height: 500px"
+                    class="add-product-dialog">
+                    <p class="mb-4"><i class="pi pi-exclamation-circle"></i> Project's contracts are added from the
+                        project page!</p>
                     <div class="field grid">
                         <label class="col-12 mb-2"> Opposite party</label>
                         <div class="col-12">
-                            <AutoComplete placeholder="Search" id="project-member" :dropdown="true" v-model="selectedAutoValue" :suggestions="autoFilteredValue" @complete="searchCountry($event)" field="name" />
+                            <AutoComplete placeholder="Search" id="project-member" :dropdown="true"
+                                v-model="selectedAutoValue" :suggestions="autoFilteredValue"
+                                @complete="searchCountry($event)" field="name" />
                         </div>
                     </div>
                     <div class="field grid">
                         <label for="type" class="col-12 mb-2">Category</label>
                         <div class="col-12">
-                            <Dropdown id="type" v-model="contractType" :options="contractTypeList" placeholder="Select type ..." />
+                            <Dropdown id="type" v-model="contractType" :options="contractTypeList"
+                                placeholder="Select type ..." />
                         </div>
                     </div>
                     <div class="field grid">
@@ -157,7 +177,8 @@ const closeUploadDialog = () => {
                     <div class="field grid">
                         <label for="price" class="col-12 mb-2">Contract file</label>
                         <div class="col-12">
-                            <FileUpload name="demo[]" @upload="onUpload" :multiple="true" accept="image/*" :maxFileSize="1000000">
+                            <FileUpload name="demo[]" @upload="onUpload" :multiple="true" accept="image/*"
+                                :maxFileSize="1000000">
                                 <template #empty>
                                     <p>Drag and drop files to here to upload.</p>
                                 </template>
@@ -170,8 +191,10 @@ const closeUploadDialog = () => {
                      -->
                     <template #footer>
                         <div class="mt-3">
-                            <Button label="cancel" icon="pi pi-times" @click="closeUploadDialog" class="p-button-text" severity="danger" />
-                            <Button label="Upload" icon="pi pi-upload" @click="closeUploadDialog" class="p-button-text" />
+                            <Button label="cancel" icon="pi pi-times" @click="closeUploadDialog" class="p-button-text"
+                                severity="danger" />
+                            <Button label="Upload" icon="pi pi-upload" @click="closeUploadDialog"
+                                class="p-button-text" />
                         </div>
                     </template>
                 </Dialog>
