@@ -147,6 +147,16 @@ const router = createRouter({
                     component: () => import('@/views/pages/Logs.vue')
                 },
                 {
+                    path: '/pages/generate_qrcode',
+                    name: 'generate_qrcode',
+                    component: () => import('@/views/pages/GenerateQrCodes.vue')
+                },
+                {
+                    path: '/pages/verify_documents',
+                    name: 'verify_documents',
+                    component: () => import('@/views/pages/VerifyDocuments.vue')
+                },
+                {
                     path: '/pages/roles_permissions',
                     name: 'roles_permissions',
                     component: () => import('@/views/pages/RolesPermissions.vue')

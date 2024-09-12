@@ -29,7 +29,9 @@ const model = ref([
                     { label: 'Distributors', icon: 'pi pi-fw pi-building', to: '/pages/users/distributors' }
                 ]
             },
-            { label: 'Roles & Permissions', icon: 'pi pi-fw pi-verified', to: '/pages/roles_permissions' },
+            { label: 'Generate QR codes', icon: 'pi pi-fw pi-qrcode', to: '/pages/generate_qrcode' },
+            { label: 'Verify Documents', icon: 'pi pi-fw pi-verified', to: '/pages/verify_documents' },
+            { label: 'Roles & Permissions', icon: 'pi pi-fw pi-key', to: '/pages/roles_permissions' },
             { label: 'Logs', icon: 'pi pi-fw pi-exclamation-circle', to: '/pages/logs' },
         ]
     },
