@@ -1,31 +1,33 @@
 <script setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import AES from 'crypto-js/aes';
-import Utf8 from 'crypto-js/enc-utf8';
 import QRCode from 'qrcode';
 
-const data = ref('This is the secret data\nINV-001\nREC-001');
-const secretKey = ref('YourSecretKey123');
+const data = ref('');
+const empty = ref(false);
+const errorMsg = ref('');
+const secretKey = ref(import.meta.env.VITE_SECRET_KEY);
 const encryptedData = ref('');
-const decryptedData = ref('');
 
 const qrCanvas = ref(null);
-
 const qrSrc = ref(null);
 
 const encrypt = (data, secretKey) => {
     return AES.encrypt(data, secretKey).toString();
 }
 
-const decrypt = (encryptedData, secretKey) => {
-    const bytes = AES.decrypt(encryptedData, secretKey);
-    return bytes.toString(Utf8);
-}
-
-// Generate the QR code
-const generateQRCode = async (data) => {
+const generateQRCode = async () => {
+    if (!data.value.trim()) {
+        console.error('No data to generate QR code.');
+        empty.value = true;
+        return;
+    }
     try {
-        await QRCode.toCanvas(qrCanvas.value, data, {
+        encryptedData.value = encrypt(data.value.trim(), secretKey.value);
+        qrSrc.value = '';
+        data.value = '';
+        empty.value = false;
+        await QRCode.toCanvas(qrCanvas.value, encryptedData.value, {
             width: 128,
             color: {
                 dark: '#1155CC',
@@ -33,9 +35,10 @@ const generateQRCode = async (data) => {
             },
         });
 
-        qrSrc.value = qrCanvas.value.toDataURL('image/png');;
+        qrSrc.value = qrCanvas.value.toDataURL('image/png');
     } catch (error) {
         console.error('Error generating QR code:', error);
+        errorMsg.value = error.message;
     }
 };
 
@@ -47,34 +50,35 @@ const downloadQRCode = () => {
     link.click();
 };
 
-onMounted(() => {
-    encryptedData.value = encrypt(data.value, secretKey.value);
-    console.log('Encrypted Data:', encryptedData.value);
-
-    decryptedData.value = decrypt(encryptedData.value, secretKey.value);
-    console.log('Decrypted Data:', decryptedData.value);
-
-    generateQRCode(encryptedData.value);
-})
-
 </script>
 
 <template>
     <div class="grid p-fluid">
-
         <div class="col-12">
             <div class="card">
-                <h5>QR Code Generator</h5>
-                <!-- Add input filed to take the data you want to encrypt and to generate the QR code -->
-                <!-- Add button to generate the QR code -->
-                <div class="flex flex-column justify-content-center align-items-center gap-3">
-                    <Image :src="qrSrc" alt="Image" width="250" preview />
-                    <canvas id="qr-canvas" ref="qrCanvas" style="display:none;"></canvas>
-                    <Button @click="downloadQRCode" label="Download QR Code" style="width: fit-content;"></Button>
+                <h5 class="mb-5">QR Code Generator</h5>
+                <div class="grid">
+                    <div class="col-12 xl:col-6">
+                        <label for="qrCodeData">QR Code data</label>
+                        <Textarea v-model="data" id="qrCodeData" class="mb-1 mt-2"
+                            placeholder="INV-00# ... REC-00# ... PREC-00#" :autoResize="true" rows="5"
+                            :invalid="empty" />
+                        <small id="qrCodeData" class="p-error">{{ errorMsg }}</small>
+                        <br>
+                        <Button @click="generateQRCode" class="mt-2" label="Generate QR Code"
+                            style="width: fit-content;"></Button>
+                    </div>
+                    <div class="col-12 xl:col-6">
+                        <div class="flex flex-column justify-content-center align-items-center gap-3">
+                            <Image v-if="qrSrc" :src="qrSrc" alt="Image" width="250" preview />
+                            <canvas id="qr-canvas" ref="qrCanvas" style="display:none;"></canvas>
+                            <Button v-if="qrSrc" @click="downloadQRCode" label="Download QR Code"
+                                style="width: fit-content;"></Button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
