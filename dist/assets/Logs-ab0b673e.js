@@ -1,0 +1,1 @@
+import{_ as n,e as o,f as t,i as s}from"./index-c8a9da24.js";const r={},a={className:"card"};function c(l,e){return o(),t("div",a,e[0]||(e[0]=[s("h5",null,"Coming later",-1),s("p",null,"This page is under development.",-1)]))}const i=n(r,[["render",c]]);export{i as default};
