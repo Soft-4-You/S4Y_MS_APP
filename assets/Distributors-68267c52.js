@@ -1,0 +1,1 @@
+import{_ as t,e as r,f as n,i as s}from"./index-45d168f1.js";const o={},a={className:"card"};function c(i,e){return r(),n("div",a,e[0]||(e[0]=[s("h5",null,"Coming later",-1),s("p",null,"This page is under development.",-1)]))}const d=t(o,[["render",c]]);export{d as default};
